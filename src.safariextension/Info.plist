@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Joe Ertaba</string>
+	<key>Builder Version</key>
+	<string>12602.4.8</string>
+	<key>CFBundleDisplayName</key>
+	<string>Dark Theme for YouTube™</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.add0n.youtube-dark</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Global Page</key>
+		<string>background.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Identifier</key>
+				<string>toolbar</string>
+				<key>Image</key>
+				<string>data/icons/32.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>toolbar</string>
+				<key>Tool Tip</key>
+				<string>Toggle Button for Dark Theme for YouTube™ </string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>data/inject.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>A highly customizable dark charcoal/blue theme for YouTube</string>
+	<key>DeveloperIdentifier</key>
+	<string>RED8XKG2R4</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*.youtube.com</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://add0n.com/dark-theme-for-youtube.html</string>
+</dict>
+</plist>

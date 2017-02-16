@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "version": "0.1.0",
+  "name": "Dark Theme for YouTube™",
+  "description": "A highly customizable dark charcoal/blue theme for YouTube",
+  "permissions": [
+    "storage",
+    "*://*.youtube.com/*"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts":[
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["data/inject.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "web_accessible_resources": [
+    "data/*.css"
+  ],
+  "icons": {
+    "16": "data/icons/16.png",
+    "32": "data/icons/32.png",
+    "64": "data/icons/64.png",
+    "128": "data/icons/128.png",
+    "256": "data/icons/256.png"
+  },
+  "homepage_url": "http://add0n.com/dark-theme.html",
+  "options_ui": {
+    "page": "data/options/index.html",
+    "chrome_style": true
+  }
+}
