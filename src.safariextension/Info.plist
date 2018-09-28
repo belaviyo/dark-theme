@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Joe Ertaba</string>
 	<key>Builder Version</key>
-	<string>12602.4.8</string>
+	<string>12603.1.30.0.34</string>
 	<key>CFBundleDisplayName</key>
 	<string>Dark Theme for YouTube™</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleShortVersionString</key>
-	<string>0.1.0</string>
+	<string>0.1.1</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Chrome</key>

@@ -1,55 +1,84 @@
 'use strict';
 
+chrome.storage.onChanged.addListener(prefs => {
+  if (prefs.enabled) {
+    const toggle = document.querySelector('ytd-multi-page-menu-renderer paper-toggle-button');
+    if (toggle) {
+      if (toggle.getAttribute('aria-pressed') === 'false' && prefs.enabled.newValue) {
+        toggle.click();
+      }
+      if (toggle.getAttribute('aria-pressed') === 'true' && prefs.enabled.oldValue) {
+        toggle.click();
+      }
+    }
+    else {
+      try {
+        document.querySelector('ytd-topbar-menu-button-renderer:last-of-type ytd-toggle-theme-compact-link-renderer').click();
+        document.querySelector('ytd-toggle-theme-compact-link-renderer').click();
+      }
+      catch(e) {
+        window.location.reload();
+      }
+    }
+  }
+});
+
 var style = document.createElement('style');
 style.type = 'text/css';
+style.media = 'screen';
+var enabled = true;
 
-// load style
-var req = new XMLHttpRequest();
-req.open('GET', chrome.runtime.getURL('data/youtube-umbra.css'));
-req.onload = () => {
-  chrome.storage.local.get({
-    'selection-bg-color': '#445',
-    'selection-text-color': '#dde',
-    'body-font': '"Open Sans", sans-serif',
-    'bg-color': '#1b1b1d',
-    'main-text-color': '#aaaab6',
-    'main-faded-text-color': '#66666c',
-    'author-highlight-bg-color': '#445',
-    'sep-line-color': '#36363f',
-    'card-bg-color': '#222225',
-    'card-dark-bg-color': '#1e1e20',
-    'card-light-bg-color': '#2a2a2d',
-    'card-border-color': '#2f2f34',
-    'card-hover-bg-color': '#2a2a2d',
-    'card-light-hover-bg-color': '#303034',
-    'card-light-hover-border-color': '#404044',
-    'menu-bg-color': '#2a2a2e',
-    'menu-hover-bg-color': '#2f2f34',
-    'menu-border-color': '#36363f',
-    'menu-light-bg-color': '#3a3a44',
-    'menu-light-hover-bg-color': '#3f3f48',
-    'menu-light-active-bg-color': '#46464f',
-    'menu-light-border-color': '#46464f',
-    'link-color': '#ddd',
-    'link-hover-color': '#fff',
-    'input-box-bg-color': '#171719',
-    'input-checkbox-toggle-bg-color': '#54545a',
-    'input-checkbox-active-bg-color': '#3a3a44',
-    'input-checkbox-inactive-bg-color': '#22222'
-  }, prefs => {
-    let response = req.response;
-    Object.keys(prefs).forEach(name => {
-      response = response.replace('%' + name, prefs[name]);
-    });
-    style.textContent = response;
-  });
-};
-req.send();
+const update = () => chrome.storage.local.get({
+  'background-color': '#2e2e2e',
+  'text-color': '#d2cfcf',
+  'border-color': '#606060',
+  'toolbar-color': '#1f1f1f',
+  'custom-css': ''
+}, prefs => {
+  style.textContent = `
+    [dark] *:not([style-scope]):not(.style-scope) {
+      --yt-main-app-background: ${prefs['background-color']} !important;
+      --yt-main-app-background-tmp: ${prefs['background-color']} !important;
+      --yt-primary-text-color: ${prefs['text-color']} !important;
+      --yt-border-color: ${prefs['border-color']} !important;
+      --yt-swatch-primary: ${prefs['toolbar-color']} !important;
+    }
+  ` + prefs['custom-css'];
+});
+update();
 
-document.documentElement.appendChild(style);
+chrome.storage.onChanged.addListener(prefs => {
+  if (prefs.enabled) {
+    enabled = prefs.enabled.newValue;
+    if (enabled) {
+      document.documentElement.appendChild(style);
+    }
+    else {
+      try {
+        document.documentElement.removeChild(style);
+      }
+      catch (e) {}
+    }
+  }
+  if (prefs['background-color'] || prefs['text-color'] || prefs['border-color']) {
+    update();
+  }
+});
+
 // reinsert when body is ready
 var mutation = new MutationObserver(() => {
-  document.documentElement.appendChild(style);
+  if (enabled) {
+    document.documentElement.appendChild(style);
+  }
   mutation.disconnect();
 });
-mutation.observe(document, {childList: true, subtree: true});
+
+chrome.storage.local.get({
+  enabled: true
+}, prefs => {
+  enabled = prefs.enabled;
+  if (enabled) {
+    document.documentElement.appendChild(style);
+  }
+  mutation.observe(document, {childList: true, subtree: true});
+});

@@ -2613,3 +2613,38 @@ hr.metadata-separator-line {
 	filter: saturate(0.075) hue-rotate(240deg);
 }
 */
+
+/* FIXES */
+#masthead-positioner,
+#guide-content,
+#channel-header,
+ytd-masthead,
+ytd-app {
+  background-color: var(--bg-color) !important;
+}
+a,
+yt-formatted-string,
+div,
+span {
+  color: var(--main-text-color) !important;
+}
+ytd-topbar-logo-renderer,
+#menu-button {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.primary-header-contents,
+#container {
+  background-color: var(--bg-color) !important;
+  box-shadow: none !important;
+  border-color: #777 !important;
+}
+#container input {
+  color: var(--main-text-color) !important;
+}
+#channel-subheader,
+#tabs-inner-container {
+  background-color: var(--selection-bg-color) !important;
+}
+#subscribe-button yt-formatted-string {
+  color: #ddd !important;
+}

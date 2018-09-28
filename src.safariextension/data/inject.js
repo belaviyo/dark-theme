@@ -29,3 +29,8 @@ var mutation = new MutationObserver(() => {
   mutation.disconnect();
 });
 mutation.observe(document, {childList: true, subtree: true});
+/*
+window.addEventListener('resize', () => {
+  document.documentElement.appendChild(style);
+});
+*/
