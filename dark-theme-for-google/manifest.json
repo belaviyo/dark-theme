@@ -1,0 +1,72 @@
+{
+  "manifest_version": 2,
+  "version": "0.2.2",
+  "name": "Dark Theme for Google™",
+  "description": "__MSG_app_description__",
+  "default_locale": "en",
+  "permissions": [
+    "storage",
+    "alarms",
+    "idle"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts":[
+      "background.js"
+    ]
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "include_globs": [
+      "*://www.google.*/*",
+      "*://images.google.*/*",
+      "*://news.google.*/*",
+      "*://encrypted.google.*/*",
+      "*://translate.google.*/*"
+    ],
+    "exclude_globs": [
+      "*://www.google.*/recaptcha/*",
+      "*://www.google.*/maps*",
+      "*://accounts.google.*/*",
+      "*://contacts.google.*/*"
+    ],
+    "js": [
+      "data/inject.js"
+    ],
+    "run_at": "document_start",
+    "all_frames": true
+  }],
+
+  "web_accessible_resources": [
+    "data/google-black.css"
+  ],
+  "icons": {
+    "16": "data/icons/16.png",
+    "19": "data/icons/19.png",
+    "32": "data/icons/32.png",
+    "38": "data/icons/38.png",
+    "64": "data/icons/64.png",
+    "128": "data/icons/128.png",
+    "256": "data/icons/256.png"
+  },
+  "homepage_url": "http://add0n.com/dark-theme.html?from=google",
+  "options_ui": {
+    "page": "data/options/index.html",
+    "chrome_style": true
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "data/icons/16.png",
+      "19": "data/icons/19.png",
+      "32": "data/icons/32.png",
+      "38": "data/icons/38.png",
+      "64": "data/icons/64.png"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "{026cca71-a2e2-4020-840d-f2759849d62e}",
+      "strict_min_version": "52.0"
+    }
+  }
+}

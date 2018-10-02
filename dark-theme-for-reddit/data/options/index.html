@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Test Extension Options</title>
+  <style>
+    body {
+      padding: 10px;
+      min-width: 400px;
+    }
+    select {width: 100px;}
+    table {width: 100%;}
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>Theme</td>
+      <td>
+      <select id="theme">
+        <option value="reddit-minimal-dark.css">Reddit Minimal Dark</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Open FAQs page on update</td>
+      <td><input type="checkbox" id="faqs"></td>
+    </tr>
+  </table>
+  <br>
+  <div>
+    <button id="save">Save</button>
+    <span id="status"></span>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

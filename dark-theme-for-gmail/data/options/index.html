@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Test Extension Options</title>
+  <style>
+    body { padding: 10px; }
+    select {width: 100px;}
+    table {width: 100%;}
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>Theme</td>
+      <td>
+      <select id="theme">
+        <option value="dark_gmail_mod.css">Dark Gmail Mod (by xero harrison)</option>
+        <option value="dark_gmail_mod_k.css">Dark Gmail mod (by Karsonito)</option>
+        <option value="old_school_gmail_terminal_theme.css">Old School Gmail Terminal Theme (by elenaRulz)</option>
+        <!-- <option value="dark_energy.css">Gmail Hawken (by hawken)</option> -->
+        <option value="dark_energy.css">Dark Energy (by TwistedJackal)</option>
+      </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Open FAQs page on update</td>
+      <td><input type="checkbox" id="faqs"></td>
+    </tr>
+  </table>
+  <br>
+  <div>
+    <button id="save">Save</button>
+    <span id="status"></span>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

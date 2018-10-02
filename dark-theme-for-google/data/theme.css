@@ -1,0 +1,156 @@
+#lst-ib,
+input,
+.gb_xb {
+  background: transparent!important;
+}
+html:not(#⁠),
+#hdtbSum,
+.jfk-bubble,
+#qbp,
+#kbd {
+  background: --bg-color--!important;
+}
+body.hp:not(#⁠) {
+  color: --front-color--!important;
+}
+:not(#⁠) {
+  color: --front-color--!important;
+}
+:not(#⁠) option {
+  color: #000!important;
+}
+:not(#⁠):link .mVDMnf,
+:not(#⁠):link h3,
+:not(#⁠):link {
+  color: --link-color--!important;
+}
+:not(#⁠):visited .mVDMnf,
+:not(#⁠):visited h3,
+:not(#⁠):visited {
+  color: --visited-color--!important;
+}
+::selection {
+  background-color: --selection-bg--!important;
+  color: --bg-color--!important;
+  text-shadow: none!important
+}
+._Bs:not(#⁠),
+._LSh:not(#⁠),
+#irc_pc:not(#⁠),
+.mn-dwn-arw:not(#⁠) {
+  border-color: --front-color-- transparent!important;
+}
+.tnv-lt-arw:not(#⁠) {
+  border-color: transparent --front-color--!important;
+}
+.goog-flat-menu-button-dropdown {
+  border-color: --front-color-- transparent!important;
+}
+.gb_Wa,
+.gb_Xa {
+  border-color: transparent transparent --bg-color--!important;
+}
+/*search bar*/
+#fkbx { /* as homepage */
+  box-shadow: 0 0 0 1px --front-color--!important;
+}
+body.fkbxfcs #fkbx {
+  box-shadow: 0 0 0 1px --link-color--!important;
+}
+#sfdiv {
+  border: 1px solid --front-color--!important;
+}
+#sfdiv.sbhcn {
+  border: 1px solid --visited-color--!important;
+}
+#sfdiv.sbfcn {
+  border: 1px solid --link-color--!important;
+}
+.ab_button,
+:not(#sfdiv):not(#nqsbq):not(.mn-dwn-arw):not(._Bs):not(.goog-flat-menu-button-dropdown):not(#gt-src-wrap):not(#gt-res-wrap):not([type="email"]):not([type="password"]):not([aria-hidden]):not([role="menu"]):not([aria-expanded]):not([type="text"]):not([role="listbox"]) {
+  border: none!important;
+}
+:not([title]):not(.gb_xb),
+[title^="Results"] {
+  background-color: transparent!important;
+}
+[role="listbox"]:not(#⁠),
+[aria-hidden="false"]:not(#⁠),
+[role="menu"]:not(#hdtb-more),
+[aria-label="Account Information"]:not(#⁠),
+[id^="gbd"]:not(#⁠),
+[class$="dlg"]:not(#⁠),
+#fsett:not(#⁠),
+#ab_options:not(#⁠),
+.crp:not(#⁠),
+.hdtb-mn-o:not(#⁠),
+.ab_dropdown:not(#⁠),
+.popupContent:not(#⁠),
+.jfk-scrollbar:not(#⁠) {
+  background-color: --bg-color--!important;
+}
+.sfbgg,
+.card-mask,
+.ZvpjBb {
+  background-image: none!important;
+}
+.ab_button,
+[role="button"]:not(.gb_Rb):not(#irc_cb),
+[type="submit"],
+[type="button"],
+.goog-flat-menu-button:not(#⁠) {
+  background: transparent!important;
+}
+[aria-label="promo"] {
+    display: none!important
+}
+[aria-hidden],
+[role="menu"],
+[aria-expanded] {
+  border-color: --visited-color--!important;
+}
+:not(#⁠) #gbwa .gb_b,
+:not(#⁠) #gbwa+div a>div {
+  background-image: url(https://ssl.gstatic.com/gb/images/v1_76783e20.png)!important;
+  background-size: 92px 2541px!important;
+}
+:not(#⁠) #gbwa .gb_b[href*="/options/"] {
+  background-position: -60px -1675px!important;
+}
+:not(#⁠) #gbwa+div a>div {
+  background-color: rgba(255, 255, 255, .55)!important;
+  background-position: -92px -1921px!important;
+}
+nav svg,
+[role="toolbar"] svg,
+[role="menu"] svg,
+[role="button"] svg[fill="#000000"] {
+  filter: invert(1)hue-rotate(180deg)!important;
+}
+.ab_icon,
+.jfk-button-img,
+[class*="vk-sf-c"]:not([class*="c273"]):not([class*="cl"]),
+.vk-t-btn.vk-sf-cl,
+.gsst_e {
+  filter: invert(1)hue-rotate(180deg);
+  -webkit-filter: invert(1)hue-rotate(180deg);
+}
+[role="listbox"] {
+  border: 1px --visited-color-- solid!important;
+}
+[role="listbox"]:hover {
+  border: 1px --link-color-- solid!important;
+}
+.vk_ard:after,
+.vk_aru:before {
+  display: none!important
+}
+[role="presentation"].sbsb_d {
+  background-color: --visited-color--!important;
+}
+.jfk-bubble,
+#qbp,
+#kbd,
+.vk-btn {
+  box-shadow: 0 0 1px !important;
+}
