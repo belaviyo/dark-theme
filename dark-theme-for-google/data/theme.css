@@ -154,3 +154,6 @@ nav svg,
 .vk-btn {
   box-shadow: 0 0 1px !important;
 }
+:not([title]):not(.gb_xb):not(.frame):not(.input-button-container):not(.source-wrap):not(.sbhl) > input[type="submit"] {
+    background-color: #201f1f !important;
+}
