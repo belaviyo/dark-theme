@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "version": "0.2.4",
-  "name": "Dark Theme for Google™",
+  "version": "0.1.0",
+  "name": "Dark Theme for Facebook™",
   "description": "__MSG_app_description__",
   "default_locale": "en",
   "permissions": [
@@ -16,19 +16,13 @@
     ]
   },
   "content_scripts": [{
-    "matches": ["*://*/*"],
-    "include_globs": [
-      "*://www.google.*/*",
-      "*://images.google.*/*",
-      "*://news.google.*/*",
-      "*://encrypted.google.*/*",
-      "*://translate.google.*/*"
+    "matches": [
+      "*://*.facebook.com/*",
+      "*://*.messenger.com/*"
     ],
     "exclude_globs": [
-      "*://www.google.*/recaptcha/*",
-      "*://www.google.*/maps*",
-      "*://accounts.google.*/*",
-      "*://contacts.google.*/*"
+      "*://*.facebook.com/help*",
+      "*://*.messenger.com/help*"
     ],
     "js": [
       "data/inject.js"
@@ -49,7 +43,7 @@
     "128": "data/icons/128.png",
     "256": "data/icons/256.png"
   },
-  "homepage_url": "http://add0n.com/dark-theme.html?from=google",
+  "homepage_url": "http://add0n.com/dark-theme.html?from=facebook",
   "options_ui": {
     "page": "data/options/index.html",
     "chrome_style": true
@@ -61,12 +55,6 @@
       "32": "data/icons/32.png",
       "38": "data/icons/38.png",
       "64": "data/icons/64.png"
-    }
-  },
-  "applications": {
-    "gecko": {
-      "id": "{026cca71-a2e2-4020-840d-f2759849d62e}",
-      "strict_min_version": "52.0"
     }
   }
 }

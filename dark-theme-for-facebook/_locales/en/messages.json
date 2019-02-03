@@ -1,12 +1,12 @@
 {
   "app_description": {
-    "message": "A highly customizable dark theme for Google products (search, images, translate, and contacts)"
+    "message": "A schedulable and customizable dark theme for facebook.com and messenger.com"
   },
   "name": {
-    "message": "Dark Theme for Google"
+    "message": "Dark Theme for Facebook"
   },
   "options_title": {
-    "message": "Dark Theme for Google™ :: Options"
+    "message": "Dark Theme for Facebook™ :: Options"
   },
   "options_font_color": {
     "message": "Main font color"
@@ -17,11 +17,11 @@
   "options_visited_color": {
     "message": "Links color (visited)"
   },
-  "options_bg_color": {
-    "message": "Background color"
-  },
   "options_selection_color": {
     "message": "Selection color"
+  },
+  "options_bg_color": {
+    "message": "Background color"
   },
   "options_selection_bg": {
     "message": "Selection background color"

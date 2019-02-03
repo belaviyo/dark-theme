@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title data-i18n="options_title"></title>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      min-width: 500px;
+    }
+    td:last-child {
+      text-align: right;
+    }
+    textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+
+<body>
+  <form action="#">
+    <table width=100%>
+      <tr>
+        <td data-i18n="options_font_color"></td>
+        <td><input type="color" id="front-color"></td>
+      </tr>
+      <tr>
+        <td data-i18n="options_links_color"></td>
+        <td><input type="color" id="link-color"></td>
+      </tr>
+      <tr>
+        <td data-i18n="options_visited_color"></td>
+        <td><input type="color" id="visited-color"></td>
+      </tr>
+      <tr>
+        <td data-i18n="options_bg_color"></td>
+        <td><input type="color" id="bg-color"></td>
+      </tr>
+      <tr>
+        <td data-i18n="options_selection_color"></td>
+        <td><input type="color" id="selection-color"></td>
+      </tr>
+      <tr>
+        <td data-i18n="options_selection_bg"></td>
+        <td><input type="color" id="selection-bg"></td>
+      </tr>
+      <tr>
+        <td data-i18n="options_schedule_title"></td>
+        <td>
+          <div style="display: flex; flex-direction: column; align-items: flex-start">
+            <label style="padding: 5px 0; display: flex"><input type="checkbox" id="schedule">&nbsp;<span id="state"></span></label>
+            <div>
+              <input type="time" id="day-time" required> - <input type="time" id="night-time" required>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="faqs" data-i18n="options_faqs"></label></td>
+        <td><input type="checkbox" id="faqs"></td>
+      </tr>
+    </table>
+    <p>Custom <a href="https://www.w3schools.com/Css/">CSS</a> rules: <textarea id="custom-css" rows="6" placeholder="Any CSS rule will be added to the default dark theme"></textarea></p>
+
+    <div id=explore></div>
+    <p>
+      <input type="button" id="support" data-i18n="options_support" data-i18n-value="value">
+      <input type="button" id="reset" data-i18n="options_reset" data-i18n-value="value"> - <input type="submit"  data-i18n="options_save" data-i18n-value="value">
+      <span id="status"></span>
+    </p>
+  </form>
+
+  <script src="index.js"></script>
+  <script async src="matched.js"></script>
+</body>
+</html>

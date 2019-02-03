@@ -25,11 +25,12 @@ var req = new XMLHttpRequest();
 req.open('GET', chrome.runtime.getURL('data/theme.css'));
 req.onload = () => {
   chrome.storage.local.get({
-    'front-color': '#8C8C8C',
-    'link-color': '#00ADEE',
+    'bg-color': '#222324',
+    'link-color': '#9bb6df',
     'visited-color': '#906f51',
-    'bg-color': '#2a2d2d',
-    'selection-bg': '#cccccc',
+    'front-color': '#e9e8e7',
+    'selection-color': '#eeeeee',
+    'selection-bg': '#bbbbbb',
     'custom-css': ''
   }, prefs => {
     let response = req.response;
