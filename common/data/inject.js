@@ -26,8 +26,11 @@ req.open('GET', chrome.runtime.getURL('data/theme.css'));
 req.onload = () => {
   chrome.storage.local.get({
     'bg-color': '#222324',
+    'bg-light-color': '#4a4a4a',
     'link-color': '#9bb6df',
     'visited-color': '#906f51',
+    'link-header-color': '#648864',
+    'link-visited-header-color': '#8a7885',
     'front-color': '#e9e8e7',
     'selection-color': '#eeeeee',
     'selection-bg': '#bbbbbb',

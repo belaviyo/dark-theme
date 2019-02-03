@@ -17,8 +17,17 @@
   "options_visited_color": {
     "message": "Links color (visited)"
   },
+  "options_links_header_color": {
+    "message": "Links header color"
+  },
+  "options_visited_header_color": {
+    "message": "Links header color (visited)"
+  },
   "options_bg_color": {
     "message": "Background color"
+  },
+  "options_bg_light_color": {
+    "message": "Background light color"
   },
   "options_selection_color": {
     "message": "Selection color"

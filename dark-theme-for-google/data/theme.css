@@ -13,21 +13,27 @@ html:not(#⁠),
 body.hp:not(#⁠) {
   color: --front-color--!important;
 }
-:not(#⁠) {
+
+:not(#⁠):not(.BVPfqc):not(.iUh30):not(.LC20lb):not(.ab_button):not(.KEIzSc) {
   color: --front-color--!important;
 }
 :not(#⁠) option {
   color: --bg-color--!important;
 }
 :not(#⁠):link .mVDMnf,
-:not(#⁠):link h3,
 :not(#⁠):link {
   color: --link-color--!important;
 }
 :not(#⁠):visited .mVDMnf,
-:not(#⁠):visited h3,
 :not(#⁠):visited {
   color: --visited-color--!important;
+}
+/* header color */
+:not(#⁠):link h3 {
+  color: --link-header-color--!important;
+}
+:not(#⁠):visited h3 {
+  color: --link-visited-header-color--!important;
 }
 ::selection {
   background-color: --selection-bg--!important;
@@ -74,7 +80,7 @@ body.fkbxfcs #fkbx {
   background: --bg-color--!important;
 }
 
-:not([title]):not(.gb_xb):not(.frame):not(.input-button-container):not(.source-wrap):not(.sbhl),
+:not([title]):not(.gb_xb):not(.frame):not(.input-button-container):not(.source-wrap):not(.sbhl):not(.cwdrsb-tpl):not(.nojsv):not(.ifM9O):not(.kltooltip):not(.nGzje):not([name="btnI"]):not([name="btnK"]):not(.OKvwbb),
 [title^="Results"] {
   background-color: transparent!important;
 }
@@ -112,7 +118,7 @@ body.fkbxfcs #fkbx {
   background-color: transparent!important;
 }
 [aria-label="promo"] {
-    display: none!important
+  display: none!important
 }
 [aria-hidden],
 [role="menu"],
@@ -139,8 +145,11 @@ nav svg,
   filter: invert(1)hue-rotate(180deg);
   -webkit-filter: invert(1)hue-rotate(180deg);
 }
+.RNNXgb { /* search box */
+  border: solid 1px #545454 !important;
+}
 [role="listbox"] {
-  border: 1px --visited-color-- solid!important;
+  border: 1px #545454 solid!important;
 }
 [role="listbox"]:hover {
   border: 1px --link-color-- solid!important;
@@ -161,9 +170,6 @@ nav svg,
 .sugg-fade {
   background-image: none !important;
 }
-.RNNXgb { /* search box */
-  border: solid 1px #545454 !important;
-}
 .trans-verified-button {
   filter: invert(100%);
 }
@@ -181,4 +187,38 @@ nav svg,
 }
 .jfk-button-flat {
   border: none;
+}
+/* homepage buttons */
+.FPdoLc [name="btnI"],
+.FPdoLc [name="btnK"] {
+  background-color: --bg-light-color--!important;
+}
+
+/* embed calculator */
+.BVPfqc {
+  color: --bg-color--!important;
+}
+.cwdrsb-tpl {
+  background-color: --bg-light-color--!important;
+}
+/* search link color */
+.iUh30 {
+  color: --link-color--!important;
+}
+/* floating search box after scroll down*/
+.nojsv {
+  background-color: --bg-color--!important;
+  border-bottom: solid 1px red;
+}
+/* map overlay rating */
+.ifM9O {
+  background-color: --bg-light-color--!important;
+}
+/* map overly preview */
+.kltooltip {
+  background-color: --bg-light-color--!important;
+}
+/* live score */
+.nGzje {
+  background-color: --bg-light-color--!important;
 }

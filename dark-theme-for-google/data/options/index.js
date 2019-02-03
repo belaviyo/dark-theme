@@ -10,7 +10,10 @@ function save() {
     'front-color': document.getElementById('front-color').value,
     'link-color': document.getElementById('link-color').value,
     'visited-color': document.getElementById('visited-color').value,
+    'link-header-color': document.getElementById('link-header-color').value,
+    'link-visited-header-color': document.getElementById('link-visited-header-color').value,
     'bg-color': document.getElementById('bg-color').value,
+    'bg-light-color': document.getElementById('bg-light-color').value,
     'selection-bg': document.getElementById('selection-bg').value,
     'custom-css': document.getElementById('custom-css').value,
     'day-time': document.getElementById('day-time').value,
@@ -29,10 +32,13 @@ document.getElementById('schedule').addEventListener('change', e => {
 });
 
 var defaults = {
-  'front-color': '#8C8C8C',
-  'link-color': '#00ADEE',
+  'front-color': '#e9e8e7',
+  'link-color': '#9bb6df',
   'visited-color': '#906f51',
-  'bg-color': '#333435',
+  'link-header-color': '#648864',
+  'link-visited-header-color': '#8a7885',
+  'bg-color': '#222324',
+  'bg-light-color': '#4a4a4a',
   'selection-color': '#eeeeee',
   'selection-bg': '#bbbbbb',
   'custom-css': '',
