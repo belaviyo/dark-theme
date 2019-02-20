@@ -29,9 +29,9 @@ req.onload = () => {
     'bg-light-color': '#4a4a4a',
     'link-color': '#9bb6df',
     'visited-color': '#906f51',
-    'link-header-color': '#648864',
+    'link-header-color': '#9bb6df',
     'link-visited-header-color': '#8a7885',
-    'front-color': '#e9e8e7',
+    'front-color': '#c7c7c7',
     'selection-color': '#eeeeee',
     'selection-bg': '#bbbbbb',
     'custom-css': ''

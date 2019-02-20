@@ -17,6 +17,11 @@ body.hp:not(#⁠) {
 :not(#⁠):not(.BVPfqc):not(.iUh30):not(.LC20lb):not(.ab_button):not(.KEIzSc) {
   color: --front-color--!important;
 }
+/* 1; button */
+.ab_button span:not(#⁠):not(.BVPfqc):not(.iUh30):not(.LC20lb):not(.ab_button) {
+  color: --bg-color--!important;
+}
+
 :not(#⁠) option {
   color: --bg-color--!important;
 }
@@ -80,7 +85,7 @@ body.fkbxfcs #fkbx {
   background: --bg-color--!important;
 }
 
-:not([title]):not(.gb_xb):not(.frame):not(.input-button-container):not(.source-wrap):not(.sbhl):not(.cwdrsb-tpl):not(.nojsv):not(.ifM9O):not(.kltooltip):not(.nGzje):not([name="btnI"]):not([name="btnK"]):not(.OKvwbb),
+:not([title]):not(.gb_xb):not(.frame):not(.input-button-container):not(.source-wrap):not(.sbhl):not(.cwdrsb-tpl):not(.nojsv):not(.ifM9O):not(.kltooltip):not(.nGzje):not([name="btnI"]):not([name="btnK"]):not(.OKvwbb):not(g-fab):not(.imso-fpm):not(.lubh-bar),
 [title^="Results"] {
   background-color: transparent!important;
 }
@@ -111,11 +116,13 @@ body.fkbxfcs #fkbx {
   background-image: none!important;
 }
 .ab_button,
+.ab_button span,
 [role="button"]:not(.gb_Rb):not(#irc_cb),
 [type="submit"],
 [type="button"],
 .goog-flat-menu-button:not(#⁠) {
   background-color: transparent!important;
+  color: --bg-color--!important;
 }
 [aria-label="promo"] {
   display: none!important
@@ -221,4 +228,15 @@ nav svg,
 /* live score */
 .nGzje {
   background-color: --bg-light-color--!important;
+}
+/* arrow button; 3 */
+g-fab {
+  background: --bg-color--!important;
+}
+/* live scores; 4 */
+.imso-fpm {
+  background-color: --bg-color--!important;
+}
+div[style*="position: fixed"]:not(#⁠):not(.BVPfqc):not(.iUh30):not(.LC20lb):not(.ab_button):not(.KEIzSc) {
+  background-color: --bg-color--!important;
 }
