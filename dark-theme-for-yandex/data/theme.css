@@ -1,0 +1,30 @@
+html {
+  background-color: #000;
+  filter: invert(1);
+}
+.logo {
+  filter: invert(0.8);
+}
+.tabs__item-image,
+.worldwide__icon,
+.search2,
+.Thumb-Image:empty,
+.thumb__image,
+.favicon__icon,
+.pager__item,
+.button2_theme_action,
+.path__item,
+.organic__url-text,
+.serp-footer__main,
+.serp-footer__main .thumb,
+.Scroller-Arrow_direction_left,
+.Scroller-Arrow_direction_right,
+img {
+  filter: invert(1);
+}
+.Path-Item,
+.Organic-Url,
+.link_theme_normal,
+.link_theme_minor {
+  color: #c1c1c1 !important
+}
