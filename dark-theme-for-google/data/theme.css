@@ -240,3 +240,12 @@ g-fab {
 div[style*="position: fixed"]:not(#⁠):not(.BVPfqc):not(.iUh30):not(.LC20lb):not(.ab_button):not(.KEIzSc) {
   background-color: --bg-color--!important;
 }
+/* Google app menu button */
+#gb#gb a.gb_x{
+  filter: invert(1);
+}
+/* https://github.com/belaviyo/dark-theme/issues/8 */
+#hdtb #hdtb-tls:hover,
+#hdtb #hdtb-tls:active {
+  color: #000 !important;
+}
