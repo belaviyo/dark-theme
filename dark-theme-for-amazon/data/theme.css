@@ -1,0 +1,63 @@
+html {
+  background-color: rgb(22, 22, 22) !important;
+}
+
+html, iframe {
+  filter: invert(100%) !important;
+}
+
+em,
+img,
+svg,
+image,
+video,
+audio,
+embed,
+object,
+button,
+figure:empty {
+  opacity: 0.9;
+  filter: invert(100%) !important;
+}
+
+[style*='background:url']:not(html):not(body):not(input),
+[style*='background: url']:not(html):not(body):not(input),
+[style*='background-image']:not(html):not(body):not(input) {
+  opacity: 0.9;
+  filter: invert(100%) !important;
+}
+
+header,
+#navFooter,
+.a-size-base,
+.a-icon-star,
+.a-color-price,
+#histogramTable,
+.a-color-success,
+.a-icon-star-small,
+.a-icon-star-medium,
+.kfs-item-container,
+*[class*="a-button-"] {
+  filter: invert(100%) !important;
+}
+
+*[class*="a-button-"] span {
+  color: #c1baba !important;
+}
+
+::-moz-scrollbar {background: #28292a !important}
+::-webkit-scrollbar {background: #28292a !important}
+::-moz-scrollbar-track {background: #343637 !important}
+::-webkit-scrollbar-track {background: #343637 !important}
+
+::-webkit-scrollbar-thumb {
+  background: #4d4e4f !important;
+  border-left: 1px solid #343637 !important;
+  border-right: 1px solid #343637 !important;
+}
+
+::-moz-scrollbar-thumb {
+  background: #4d4e4f !important;
+  border-left: 1px solid #343637 !important;
+  border-right: 1px solid #343637 !important;
+}
