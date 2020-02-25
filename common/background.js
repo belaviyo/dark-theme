@@ -25,7 +25,7 @@ chrome.browserAction.onClicked.addListener(() => chrome.storage.local.get({
 }));
 
 // Schedule
-var alarm = (id, val) => {
+const alarm = (id, val) => {
   val = val.split(':');
   const d = new Date();
   d.setSeconds(0);
@@ -40,7 +40,7 @@ var alarm = (id, val) => {
     periodInMinutes: 24 * 60
   });
 };
-var idle = state => state === 'active' && configure();
+const idle = state => state === 'active' && configure();
 
 chrome.storage.onChanged.addListener(prefs => {
   if (prefs['day-time'] || prefs['night-time'] || prefs['schedule']) {
@@ -69,7 +69,7 @@ chrome.storage.onChanged.addListener(prefs => {
 });
 
 // status
-var configure = () => chrome.storage.local.get({
+const configure = () => chrome.storage.local.get({
   'day-time': '19:00',
   'night-time': '08:00'
 }, prefs => {
@@ -110,6 +110,7 @@ chrome.alarms.onAlarm.addListener(configure);
   once(); // disable and re-enable the extension and test idle listener
 }
 
+// FAQs and Feedback
 {
   const {onInstalled, setUninstallURL, getManifest} = chrome.runtime;
   const {name, version} = getManifest();

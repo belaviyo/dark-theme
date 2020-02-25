@@ -1,0 +1,19 @@
+html.dark div.qFiThd,
+html.dark div.NlWrkb {
+  filter: invert(1);
+}
+html.dark #identifierNext {
+  filter: invert(1);
+  background-color: var(--button-bg) !important;
+}
+html.dark a.gb_D {
+  filter: invert(0);
+}
+html.dark div.GiKO7c {
+  color: var(--front-color);
+}
+html.dark .DRS7Fe button:not(.TrZEUc),
+html.dark .t29vte [jsslot] span {
+  filter: invert(1);
+  color: var(--link-color);
+}

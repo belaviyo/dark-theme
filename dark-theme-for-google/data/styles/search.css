@@ -1,0 +1,108 @@
+#epb-ok,
+html.dark div.qXTnff,
+html.dark .gb_ed:first-child div.gb_Jf,
+html.dark div.brWULd,
+html.dark div.OcZ8mf,
+html.dark div.rMJIte,
+html.dark span.HPVvwb,
+html.dark span.fe69if,
+html.dark div.VAG5Bf,
+html.dark div.action-menu,
+html.dark a.bia img,
+html.dark a.M3LVze img,
+html.dark img.JOmIqc,
+html.dark td > span.csb {
+  filter: invert(1);
+}
+html.dark span.w8qArf .fl,
+html.dark div.dbg0pd {
+  color: var(--front-color) !important;
+}
+html.dark div.UbRuwe,
+html.dark div.BSaJxc {
+  color: var(--color) !important;
+}
+html.dark .pdpvld {
+  filter: invert(1);
+  color: var(--link-header-color) !important;
+}
+html.dark div.DLOTif,
+html.dark div.xXEKkb {
+  filter: invert(1);
+  color: var(--link-color) !important;
+}
+html.dark a.ab_button {
+  color: #444 !important;
+}
+
+/* select tab */
+html.dark #hdtb-msb .hdtb-mitem.hdtb-msel {
+  color: var(--link-color) !important;
+  border-bottom-color: var(--link-color) !important;
+}
+html.dark span.rQEFy {
+  filter: invert(1);
+  color: var(--link-color) !important;
+  border-bottom-color: var(--link-color) !important;
+}
+
+/* shopping */
+html.dark span.qa708e.IYWnmd,
+html.dark img.TL92Hc,
+html.dark #promos {
+  filter: invert(1);
+}
+html.dark .wyNFW {
+  color: var(--link-color) !important;
+}
+
+/* google search */
+html.dark #sfcnt,
+html.dark #hdtb {
+  background-color: #fff;
+}
+html.dark .yKbIbb,
+html.dark .a0XzNd .O8VmIc .gadasb {
+  color: #000;
+}
+html.dark .minidiv .sfbg {
+  box-shadow: 0 1px 6px 0 #d6d6d6;
+}
+
+/* google images */
+html.dark div.QnfS4e,
+html.dark div.X5SPld,
+html.dark div.WaWKOe {
+  background-color: #e0e0e0;
+}
+html.dark div.tmS4cc div.sMi44c {
+  filter: invert(1);
+}
+html.dark div.QnfS4e div.sMi44c {
+  filter: invert(0);
+}
+
+/* color picker */
+html.dark div.kdPwrb,
+html.dark #kyN4Jf3TGqF__slider-content,
+html.dark div[jsname="zm9Zmd"] {
+  filter: invert(1);
+}
+
+/* timer */
+html.dark div.act-prog-anim {
+  filter: invert(1);
+}
+
+/* google news */
+html.dark div.slp {
+  filter: invert(1);
+}
+html.dark span.e8fRJf {
+  color: var(--link-header-color);
+}
+
+/* google search cite wrapping issue */
+html.dark .g div[data-ved] a {
+  white-space: nowrap;
+}

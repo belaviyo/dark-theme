@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "0.2.6",
+  "version": "0.3.0",
   "name": "Dark Theme for Google™",
   "description": "__MSG_app_description__",
   "default_locale": "en",
@@ -19,27 +19,67 @@
     "matches": ["*://*/*"],
     "include_globs": [
       "*://www.google.*/*",
+      "*://scholar.google.*/*",
       "*://images.google.*/*",
       "*://news.google.*/*",
       "*://encrypted.google.*/*",
+      "*://accounts.google.*/*",
+      "*://myaccount.google.*/*",
       "*://translate.google.*/*"
     ],
     "exclude_globs": [
       "*://www.google.*/recaptcha/*",
       "*://www.google.*/maps*",
-      "*://accounts.google.*/*",
-      "*://contacts.google.*/*"
+      "*://contacts.google.*/*",
+      "*://www.google.com/flights/*"
     ],
-    "js": [
-      "data/inject.js"
+    "js": ["data/styles/common.js"],
+    "css": ["data/styles/common.css"],
+    "run_at": "document_start"
+  }, {
+    "matches": ["*://*/*"],
+    "include_globs": [
+      "*://accounts.google.*/*",
+      "*://myaccount.google.*/*"
+    ],
+    "css": ["data/styles/accounts.css"],
+    "run_at": "document_start"
+  }, {
+    "matches": ["*://*/*"],
+    "include_globs": ["*://www.google.*/travel/*"],
+    "css": ["data/styles/travel.css"],
+    "run_at": "document_start"
+  }, {
+    "matches": ["*://*/*"],
+    "include_globs": [
+      "*://www.google.*/search?*",
+      "*://www.google.*/webhp?*"
+    ],
+    "css": ["data/styles/search.css"],
+    "run_at": "document_start"
+  }, {
+    "matches": ["*://*/*"],
+    "include_globs": [
+      "*://scholar.google.*/*"
+    ],
+    "css": ["data/styles/scholar.css"],
+    "run_at": "document_start"
+  }, {
+    "matches": ["*://*/*"],
+    "include_globs": ["*://translate.google.*/*"],
+    "css": ["data/styles/translate.css"],
+    "run_at": "document_start"
+  }, {
+    "matches": ["*://*/*"],
+    "include_globs": ["*://*.google.*/widget/app/*"],
+    "js": ["data/styles/common.js"],
+    "css": [
+      "data/styles/common.css",
+      "data/styles/widget.css"
     ],
     "run_at": "document_start",
     "all_frames": true
   }],
-
-  "web_accessible_resources": [
-    "data/theme.css"
-  ],
   "icons": {
     "16": "data/icons/16.png",
     "19": "data/icons/19.png",
@@ -49,24 +89,10 @@
     "128": "data/icons/128.png",
     "256": "data/icons/256.png"
   },
-  "homepage_url": "http://add0n.com/dark-theme.html?from=google",
+  "homepage_url": "https://add0n.com/dark-theme.html?from=google",
   "options_ui": {
     "page": "data/options/index.html",
     "chrome_style": true
   },
-  "browser_action": {
-    "default_icon": {
-      "16": "data/icons/16.png",
-      "19": "data/icons/19.png",
-      "32": "data/icons/32.png",
-      "38": "data/icons/38.png",
-      "64": "data/icons/64.png"
-    }
-  },
-  "applications": {
-    "gecko": {
-      "id": "{026cca71-a2e2-4020-840d-f2759849d62e}",
-      "strict_min_version": "57.0"
-    }
-  }
+  "browser_action": {}
 }

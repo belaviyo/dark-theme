@@ -1,0 +1,58 @@
+html.dark {
+  filter: invert(1);
+  background-color: var(--bg-color-inverted) !important;
+}
+
+html.dark body {
+  color: #555 !important;
+  background-color: var(--bg-color) !important;
+}
+html.dark ::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-color);
+}
+
+html.dark iframe,
+html.dark g-button,
+html.dark g-flat-button,
+html.dark g-raised-button,
+html.dark text-button,
+html.dark svg,
+html.dark canvas,
+html.dark img {
+  filter: invert(1);
+}
+html.dark a {
+  filter: invert(1);
+}
+html.dark text-button img,
+html.dark a svg,
+html.dark a img,
+html.dark a a {
+  filter: invert(0);
+}
+html.dark .hdtb-msel {
+  filter: invert(1);
+}
+
+/* custom colors */
+html.dark a[href*="accounts.google"].gb_4 {
+  color: var(--front-color) !important;
+  background-color: var(--button-bg) !important;
+}
+html.dark g-flat-button,
+html.dark a {
+  color: var(--link-color) !important;
+}
+html.dark g-raised-button {
+  background-color: var(--button-bg) !important;
+}
+html.dark a:visited {
+  color: var(--visited-color) !important;
+}
+html.dark a cite {
+  color: var(--link-header-color) !important;
+}
+html.dark a:visited cite {
+  color: var(--link-visited-header-color) !important;
+}

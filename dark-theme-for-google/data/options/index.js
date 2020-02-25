@@ -31,13 +31,13 @@ document.getElementById('schedule').addEventListener('change', e => {
   document.getElementById('state').textContent = chrome.i18n.getMessage('options_' + (e.target.checked ? 'enabled' : 'disabled'));
 });
 
-var defaults = {
+const defaults = {
   'front-color': '#e9e8e7',
   'link-color': '#9bb6df',
   'visited-color': '#906f51',
-  'link-header-color': '#9bb6df',
-  'link-visited-header-color': '#906f51',
-  'bg-color': '#222324',
+  'link-header-color': '#6b886b',
+  'link-visited-header-color': '#8a7885',
+  'bg-color': '#06080c',
   'bg-light-color': '#4a4a4a',
   'selection-color': '#eeeeee',
   'selection-bg': '#bbbbbb',

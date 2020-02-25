@@ -1,0 +1,20 @@
+html.dark div.acknowledge-button,
+html.dark div.history-icon,
+html.dark .gt-score-dot,
+html.dark .gt-cd-pos,
+html.dark .tlid-input-button-container,
+html.dark .sl-sugg .goog-inline-block.jfk-button-checked,
+html.dark .tl-sugg .goog-inline-block.jfk-button-checked {
+  filter: invert(1);
+  color: var(--link-color) !important;
+}
+
+html.dark .tlid-acknowledge-button-overlay {
+  color: var(--front-color) !important;
+  background-color: var(--button-bg) !important;
+}
+html.dark .tlid-select-file-button {
+  filter: invert(1);
+  color: var(--front-color) !important;
+  background-color: var(--button-bg) !important;
+}

@@ -1,0 +1,8 @@
+html.dark span.Rq5Gcb {
+  color: var(--front-color);
+}
+html.dark a.NQV3m,
+html.dark a:visited.NQV3m {
+  color: var(--front-color) !important;
+  background-color: var(--button-bg) !important;
+}
