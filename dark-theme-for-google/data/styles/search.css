@@ -7,6 +7,7 @@ html.dark div.rMJIte,
 html.dark span.HPVvwb,
 html.dark span.fe69if,
 html.dark div.VAG5Bf,
+html.dark div.P5BnJb,
 html.dark div.action-menu,
 html.dark a.bia img,
 html.dark a.M3LVze img,
@@ -57,9 +58,13 @@ html.dark .wyNFW {
 }
 
 /* google search */
+html.dark .sfbg,
+html.dark #fbar,
+html.dark #appbar,
 html.dark #sfcnt,
+html.dark #hdtbSum,
 html.dark #hdtb {
-  background-color: #fff;
+  background-color: var(--bg-light-color);
 }
 html.dark .yKbIbb,
 html.dark .a0XzNd .O8VmIc .gadasb {

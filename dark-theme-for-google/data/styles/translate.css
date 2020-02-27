@@ -18,3 +18,7 @@ html.dark .tlid-select-file-button {
   color: var(--front-color) !important;
   background-color: var(--button-bg) !important;
 }
+
+html.dark .gb_sa:not(.gb_ta) .gb_Od {
+  background-color: var(--bg-light-color);
+}

@@ -14,7 +14,7 @@ const update = prefs => {
     style.setProperty('--bg-color-inverted', prefs['bg-color']);
   }
   if ('bg-light-color' in prefs) {
-    style.setProperty('--bg-light-color', prefs['bg-light-color']);
+    style.setProperty('--bg-light-color', invert(prefs['bg-light-color']));
   }
   if ('link-color' in prefs) {
     style.setProperty('--link-color', prefs['link-color']);
@@ -41,8 +41,8 @@ const update = prefs => {
 
 chrome.storage.local.get({
   'enabled': true,
-  'bg-color': '#06080c',
-  'bg-light-color': '#4a4a4a',
+  'bg-color': '#121621',
+  'bg-light-color': '#1c212d',
   'link-color': '#9bb6df',
   'visited-color': '#906f51',
   'link-header-color': '#6b886b',

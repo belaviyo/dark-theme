@@ -1,6 +1,5 @@
 {
   "name": "YouTube Dark Theme",
-  "short_name": "itmfyoutube",
   "description": "Turn dark theme for YouTube on and off the easy way",
   "author": "James Fray",
   "version": "0.3.0",
@@ -19,7 +18,7 @@
       "common.js"
     ]
   },
-  "homepage_url": "http://add0n.com/dark-theme.html?from=youtube",
+  "homepage_url": "https://add0n.com/dark-theme.html?from=youtube",
   "icons": {
     "16": "data/icons/16.png",
     "19": "data/icons/19.png",
@@ -52,11 +51,5 @@
   "options_ui": {
     "page": "data/options/index.html",
     "chrome_style": true
-  },
-  "applications": {
-    "gecko": {
-      "id": "{e79cd175-8813-4cd2-a442-cbba163096b7}",
-      "strict_min_version": "52.0"
-    }
   }
 }

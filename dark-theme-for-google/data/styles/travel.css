@@ -1,4 +1,9 @@
 html.dark .nCP5yc:not(:disabled),
+html.dark div.jhNaCf,
+html.dark div.mfOzie,
+html.dark div.gws-flights-results__destinations-map,
+html.dark .gws-flights-form__search-button,
+html.dark div.uKOpFp4SF2X__image,
 html.dark div.gb_ae,
 html.dark div.S2UBGd,
 html.dark div.Ys86Ve,
@@ -31,4 +36,8 @@ html.dark div.gpTPNb {
 }
 html.dark .gb_Qd {
   box-shadow: 0 1px 6px 0 #d6d6d6;
+}
+html.dark .gb_sa:not(.gb_ta) .gb_Od,
+html.dark .gws-flights__footer-row {
+  background-color: var(--bg-light-color);
 }
