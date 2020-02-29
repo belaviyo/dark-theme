@@ -1,3 +1,17 @@
+/*
+  Google Homepage
+  Google Images
+  Google Images Preview
+  Color Picker
+  Timer
+  Exchange Currency
+  Google Translate
+  Google Translate Inline
+  Google Travel
+  scholar.google.com
+
+
+*/
 'use strict';
 
 const style = document.documentElement.style;
@@ -17,32 +31,36 @@ const update = prefs => {
     style.setProperty('--bg-light-color', invert(prefs['bg-light-color']));
   }
   if ('link-color' in prefs) {
-    style.setProperty('--link-color', prefs['link-color']);
+    style.setProperty('--link-color', invert(prefs['link-color']));
+    style.setProperty('--gm-colortextbutton-ink-color', invert(prefs['link-color']));
   }
   if ('visited-color' in prefs) {
-    style.setProperty('--visited-color', prefs['visited-color']);
+    style.setProperty('--visited-color', invert(prefs['visited-color']));
   }
   if ('link-header-color' in prefs) {
-    style.setProperty('--link-header-color', prefs['link-header-color']);
+    style.setProperty('--link-header-color', invert(prefs['link-header-color']));
   }
   if ('link-visited-header-color' in prefs) {
-    style.setProperty('--link-visited-header-color', prefs['link-visited-header-color']);
+    style.setProperty('--link-visited-header-color', invert(prefs['link-visited-header-color']));
   }
   if ('front-color' in prefs) {
-    style.setProperty('--front-color', prefs['front-color']);
+    style.setProperty('--front-color', invert(prefs['front-color']));
   }
   if ('selection-color' in prefs) {
-    style.setProperty('--selection-color', prefs['selection-color']);
+    style.setProperty('--selection-color', invert(prefs['selection-color']));
   }
   if ('selection-bg' in prefs) {
-    style.setProperty('--selection-bg', prefs['selection-bg']);
+    style.setProperty('--selection-bg', invert(prefs['selection-bg']));
+  }
+  if ('button-bg' in prefs) {
+    style.setProperty('--button-bg', invert(prefs['button-bg']));
   }
 };
 
 chrome.storage.local.get({
   'enabled': true,
-  'bg-color': '#121621',
-  'bg-light-color': '#1c212d',
+  'bg-color': '#222324',
+  'bg-light-color': '#292a2c',
   'link-color': '#9bb6df',
   'visited-color': '#906f51',
   'link-header-color': '#6b886b',

@@ -1,43 +1,51 @@
-html.dark .nCP5yc:not(:disabled),
-html.dark div.jhNaCf,
-html.dark div.mfOzie,
-html.dark div.gws-flights-results__destinations-map,
-html.dark .gws-flights-form__search-button,
-html.dark div.uKOpFp4SF2X__image,
-html.dark div.gb_ae,
-html.dark div.S2UBGd,
-html.dark div.Ys86Ve,
-html.dark div.APdqtd,
-html.dark div.L32YH,
-html.dark div.magPhb,
-html.dark .bWstqf .YICvqf.ieVaIb .VfPpkd-fmcmS-TvZj5c,
-html.dark .bWstqf .ZsBBeb .aLfHhc,
-html.dark div.BhKo3 {
+/* fixed colors */
+html.dark .KgqTrc.qs41qe .QwCDkd,
+html.dark .gws-travel-header__selected-item .gws-travel-header__nav-label,
+html.dark .fsapp-more-button .fsapp-option-city-name,
+html.dark .uKOpFp4SF2X__card .uKOpFp4SF2X__deal-badge,
+html.dark .uKOpFp4SF2X__card .uKOpFp4SF2X__price.uKOpFp4SF2X__deal {
+  color: var(--link-color) !important;
+}
+
+/* big image */
+html.dark .yFOTQd.TbgiRe,
+html.dark .soKt7b,
+html.dark .StYgtd {
   filter: invert(1);
 }
+html.dark .FBsWCd,
+html.dark .soKt7b h1,
+html.dark .StYgtd h1 {
+  color: var(--front-color) !important;
+  filter: invert(1);
+}
+
+html.dark .nT5yJe,
+html.dark .QGE0ed {
+  color: var(--front-color) !important;
+}
+
+/* sign in button */
 html.dark .nCP5yc:not(:disabled) {
   color: var(--front-color) !important;
-  background-color: var(--button-bg) !important;
+  background: var(--button-bg) !important;
+  border-color: transparent;
 }
-html.dark .SQtqDc,
-html.dark .ZfVo8d .geqle,
-html.dark .ZfVo8d.vrZ86b .KKjvXb,
-html.dark .ZfVo8d.vrZ86b .mZOHec,
-html.dark .ZfVo8d.vrZ86b .rRDaU:not(:disabled),
-html.dark .ZfVo8d.vrZ86b .rRDaU:not(:disabled):hover,
-html.dark .ZfVo8d.vrZ86b .rRDaU:not(:disabled):active,
-html.dark .ZfVo8d.vrZ86b .rRDaU:not(:disabled):not(.VfPpkd-ksKsZd-mWPk3d):focus,
-html.dark .ZfVo8d.vrZ86b .rRDaU:not(:disabled).VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe,
-html.dark .xnu6rd.BdOe2c,
-html.dark .mWNhyc.vrZ86b .snByac,
-html.dark div.gpTPNb {
+
+/* logo */
+html.dark .gb_nc .gb_Vc::before {
   filter: invert(1);
-  color: var(--link-color);
 }
-html.dark .gb_Qd {
-  box-shadow: 0 1px 6px 0 #d6d6d6;
+
+/* sidebar */
+html.dark .OXZ8S.qs41qe .KJackd,
+html.dark .OXZ8S.qs41qe .KJackd svg,
+html.dark .KgqTrc.qs41qe .KJackd {
+  fill: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
-html.dark .gb_sa:not(.gb_ta) .gb_Od,
-html.dark .gws-flights__footer-row {
-  background-color: var(--bg-light-color);
+
+/* send feedback */
+html.dark .SQtqDc {
+  color: var(--link-color) !important;
 }

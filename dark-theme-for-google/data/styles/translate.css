@@ -1,24 +1,66 @@
-html.dark div.acknowledge-button,
-html.dark div.history-icon,
-html.dark .gt-score-dot,
-html.dark .gt-cd-pos,
-html.dark .tlid-input-button-container,
+/* top logo */
+html.dark .gb_nc .gb_Vc {
+  filter: invert(1);
+}
+
+/* top 3-line */
+html.dark .gb_rc {
+  filter: invert(1);
+}
+
+/* selected tab */
 html.dark .sl-sugg .goog-inline-block.jfk-button-checked,
 html.dark .tl-sugg .goog-inline-block.jfk-button-checked {
+  color: var(--link-color) !important;
+}
+html.dark .sl-sugg .goog-inline-block.jfk-button-checked::after,
+html.dark .tl-sugg .goog-inline-block.jfk-button-checked::after {
+  border-bottom-color: var(--link-color) !important;
+}
+
+/* Text and Document Buttons */
+html.dark .header-button {
+  color: var(--link-color) !important;
+}
+html.dark .header-button::before {
   filter: invert(1);
+}
+
+/* header fixed color */
+html.dark .gb_sa.gb_Za.gb_Se.gb_Dc {
+  background-color: var(--bg-color) !important;
+}
+
+/* Noun Adjective Adverb, ... */
+html.dark .gt-lc.gt-lc-mobile .gt-cd-pos {
   color: var(--link-color) !important;
 }
 
-html.dark .tlid-acknowledge-button-overlay {
-  color: var(--front-color) !important;
-  background-color: var(--button-bg) !important;
-}
-html.dark .tlid-select-file-button {
+/* score */
+html.dark .filled.gt-score-dot {
   filter: invert(1);
+}
+
+/* acknowledge */
+html.dark .history-icon {
+  filter: invert(1);
+}
+html.dark .notification-container .acknowledge-button {
   color: var(--front-color) !important;
   background-color: var(--button-bg) !important;
 }
 
-html.dark .gb_sa:not(.gb_ta) .gb_Od {
-  background-color: var(--bg-light-color);
+/* document button */
+html.dark .select-file-page .button {
+  color: var(--front-color) !important;
+  background-color: var(--button-bg) !important;
+}
+
+/* language selection */
+html.dark .language_list_item_wrapper.item-selected .language_list_item {
+  color: var(--link-color) !important;
+}
+html.dark .language_list_item_wrapper.item-selected .detect_language_row_icon,
+html.dark .language_list_item_wrapper.item-selected .language_list_item_icon {
+  filter: invert(1);
 }

@@ -1,113 +1,173 @@
-#epb-ok,
-html.dark div.qXTnff,
-html.dark .gb_ed:first-child div.gb_Jf,
-html.dark div.brWULd,
-html.dark div.OcZ8mf,
-html.dark div.rMJIte,
-html.dark span.HPVvwb,
-html.dark span.fe69if,
-html.dark div.VAG5Bf,
-html.dark div.P5BnJb,
-html.dark div.action-menu,
-html.dark a.bia img,
-html.dark a.M3LVze img,
-html.dark img.JOmIqc,
-html.dark td > span.csb {
-  filter: invert(1);
-}
-html.dark span.w8qArf .fl,
-html.dark div.dbg0pd {
-  color: var(--front-color) !important;
-}
-html.dark div.UbRuwe,
-html.dark div.BSaJxc {
-  color: var(--color) !important;
-}
-html.dark .pdpvld {
-  filter: invert(1);
-  color: var(--link-header-color) !important;
-}
-html.dark div.DLOTif,
-html.dark div.xXEKkb {
-  filter: invert(1);
-  color: var(--link-color) !important;
-}
-html.dark a.ab_button {
-  color: #444 !important;
-}
-
-/* select tab */
-html.dark #hdtb-msb .hdtb-mitem.hdtb-msel {
-  color: var(--link-color) !important;
-  border-bottom-color: var(--link-color) !important;
-}
-html.dark span.rQEFy {
-  filter: invert(1);
-  color: var(--link-color) !important;
-  border-bottom-color: var(--link-color) !important;
-}
-
-/* shopping */
-html.dark span.qa708e.IYWnmd,
-html.dark img.TL92Hc,
-html.dark #promos {
-  filter: invert(1);
-}
-html.dark .wyNFW {
-  color: var(--link-color) !important;
-}
-
-/* google search */
-html.dark .sfbg,
-html.dark #fbar,
+/* search header */
 html.dark #appbar,
-html.dark #sfcnt,
 html.dark #hdtbSum,
-html.dark #hdtb {
-  background-color: var(--bg-light-color);
-}
-html.dark .yKbIbb,
-html.dark .a0XzNd .O8VmIc .gadasb {
-  color: #000;
-}
-html.dark .minidiv .sfbg {
-  box-shadow: 0 1px 6px 0 #d6d6d6;
-}
-
-/* google images */
-html.dark div.QnfS4e,
-html.dark div.X5SPld,
-html.dark div.WaWKOe {
-  background-color: #e0e0e0;
-}
-html.dark div.tmS4cc div.sMi44c {
-  filter: invert(1);
-}
-html.dark div.QnfS4e div.sMi44c {
-  filter: invert(0);
+html.dark .RNNXgb,
+html.dark .tb_c,
+html.dark .aajZCb,
+html.dark .GHDvEf,
+html.dark .GHDvEf:hover,
+html.dark .GHDvEf.selected,
+html.dark .GHDvEf.selected:hover,
+html.dark .gLFyf,
+html.dark .sfbg {
+  background-color: var(--bg-color) !important;
 }
 
-/* color picker */
-html.dark div.kdPwrb,
-html.dark #kyN4Jf3TGqF__slider-content,
-html.dark div[jsname="zm9Zmd"] {
+/* elements that have bg image */
+html.dark span.qB1pae,
+html.dark .HPVvwb,
+html.dark .sb43,
+html.dark .VByer .TU05kd {
   filter: invert(1);
+}
+
+/* links with absolute color */
+html.dark .rllt__tile-label,
+html.dark .SW5pqf,
+html.dark .xXEKkb,
+html.dark .wUrVib,
+html.dark .DLOTif,
+html.dark .VByer .UbRuwe,
+html.dark .L48Cpd .BSaJxc {
+  color: var(--link-color) !important;
+}
+
+/* selected tab */
+html.dark .rQEFy,
+html.dark #hdtb-msb .hdtb-mitem.hdtb-msel {
+  border-bottom-color: var(--link-color);
+  color: var(--link-color);
 }
 
 /* timer */
-html.dark div.act-prog-anim {
+html.dark .act-active-tab {
+  border-bottom-color: var(--link-color);
+}
+
+/* plot */
+html.dark .scobfn {
+  color: var(--link-color) !important;
+}
+/* color picker */
+html.dark .kyN4Jf3TGqF__slider-background,
+html.dark .kdPwrb,
+html.dark .NYcQFd,
+html.dark .rnt3Ze {
   filter: invert(1);
+}
+
+/* define */
+html.dark .brWULd {
+  filter: invert(1);
+}
+html.dark .pdpvld {
+  color: var(--link-color);
+}
+html.dark .cO53qb {
+  color: var(--front-color) !important;
+}
+
+/* tabbar icons */
+html.dark .more-vert svg,
+html.dark .m3kSL svg,
+html.dark .HF9Klc svg {
+  filter: invert(0);
+}
+
+/* Got it & Save button in settings */
+html.dark .jfk-button-action,
+html.dark .qXTnff {
+  color: var(--front-color) !important;
+  background: var(--button-bg) !important;
+  border-color: transparent;
+}
+
+/* Google image preview fixed color */
+html.dark .QnfS4e,
+html.dark .WaWKOe {
+  background-color: var(--bg-light-color) !important;
+}
+
+/* Google image text fixed color */
+html.dark .jdp5U .WGvvNb,
+html.dark .a0XzNd .O8VmIc .gadasb,
+html.dark .hhB0V,
+html.dark .yKbIbb,
+html.dark .jdp5U .fxgdke,
+html.dark .jdp5U .O367Af {
+  color: var(--front-color) !important;
+}
+html.dark .cEW58,
+html.dark .jZWadf {
+  background-color: var(--bg-light-color) !important;
+}
+
+/* Inline Google Translate */
+html.dark .tw-lliw.item-selected .language_list_item {
+  color: var(--link-color);
+}
+html.dark .language_list_item_checkmark {
+  filter: invert(1);
+}
+
+/* play button on images */
+html.dark g-fab,
+html.dark .ZL6cRd {
+  filter: invert(1);
+}
+
+/* google shop tile */
+html.dark .qa708e.IYWnmd {
+  filter: invert(1);
+}
+
+/* google shop hard links */
+html.dark .OpIWmf {
+  color: var(--link-color);
+}
+
+/* scores */
+/* https://www.google.com/search?sxsrf=ACYBGNSD1_A3k4OdJ23Zhpnzsdrgd3I9tw%3A1575895343636&ei=L0HuXfzDJtH99QPA8o3YBA&q=english+premier+league+fixtures&oq=premier+league+fixtures+table&gs_l=psy-ab.1.0.0i71l8.0.0..21140...0.3..0.0.0.......0......gws-wiz.EyhgAAx7rDg#sie=lg;/g/11fj6snmjm;2;/m/02_tc;mt;fp;1;; */
+html.dark .ofy7ae,
+html.dark .lr-imso-fix,
+html.dark .QMSMXe,
+html.dark .jTw2d,
+html.dark .AAhKnb.tb_h,
+html.dark .We6bVe.tb_h {
+  background-color: var(--bg-light-color) !important;
+  color: var(--front-color) !important;
+}
+html.dark .R0MhVd,
+html.dark .liveresults-sports-immersive__str-rs-ind,
+html.dark .gyj1Q9jDD8K__rs-sq,
+html.dark .vtLYrb {
+  filter: invert(1);
+}
+html.dark .GSkImd,
+html.dark .We6bVe .tb_st {
+  border-bottom-color: var(--front-color) !important;
+}
+html.dark #lb .S7TGef,
+html.dark #lb .BpGBNe {
+  color: var(--link-color);
+}
+html.dark #lb .S7TGef svg,
+html.dark #lb .BpGBNe svg {
+  filter: invert(0);
+}
+
+/* hover over sorted by relevance of google books */
+html.dark .hdtbItm label:hover,
+html.dark .hdtbItm a:hover,
+html.dark #hdtb-more-mn a:hover,
+html.dark #hdtb .hdtb-mitem a:hover,
+html.dark .hdtb-mn-hd:hover,
+html.dark #hdtb-more:hover,
+html.dark #hdtb-tls:hover {
+  color: var(--link-color);
 }
 
 /* google news */
-html.dark div.slp {
-  filter: invert(1);
-}
-html.dark span.e8fRJf {
-  color: var(--link-header-color);
-}
-
-/* google search cite wrapping issue */
-html.dark .g div[data-ved] a {
-  white-space: nowrap;
+html.dark .e8fRJf {
+  color: var(--link-color);
 }

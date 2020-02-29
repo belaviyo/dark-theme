@@ -1,14 +1,66 @@
-html.dark span.gs_ico,
-html.dark .gs_in_cb input:checked ~ .gs_chk,
-html.dark .gs_in_cb.gs_sel .gs_chk,
-html.dark div.gs_a,
-html.dark button.gs_btn_act {
+/* logo */
+html.dark #gs_hdr_lgo,
+html.dark #gs_hdr_drw_lgo {
   filter: invert(1);
 }
-html.dark span.gs_ctc {
-  color: var(--link-color) !important;
-  filter: invert(1);
-}
-html.dark span.gs_lbl {
+
+/* Stand on the shoulders of giants */
+html.dark .gs_grn {
   color: var(--front-color) !important;
+}
+
+/* search button */
+html.dark button.gs_btn_act {
+  background-color: var(--button-bg) !important;
+}
+
+/* label */
+html.dark .gs_ctc,
+html.dark .gs_rt a:link,
+html.dark .gs_rt a:link b,
+html.dark .gs_rt2 a:link,
+html.dark .gs_rt2 a:link b,
+html.dark .gs_rt a:visited,
+html.dark .gs_rt a:visited b,
+html.dark .gs_rt2 a:visited,
+html.dark .gs_rt2 a:visited b {
+  color: var(--link-color) !important;
+}
+
+/* Gooooooogle */
+html.dark .gs_ico,
+html.dark .gs_icm {
+  filter: invert(1);
+}
+
+/* star button */
+html.dark .gs_fl svg {
+  stroke: var(--link-color);
+  filter: invert(0);
+}
+
+/* cites */
+html.dark .gs_a,
+html.dark .gs_a a:link,
+html.dark .gs_a a:visited {
+  color: var(--link-header-color) !important;
+}
+
+/* header */
+html.dark #gs_ab,
+html.dark #gs_hdr_drw {
+  background-color: var(--bg-color) !important;
+}
+html.dark #gs_hdr {
+  background-color: var(--bg-light-color) !important;
+}
+
+/* footer */
+html.dark #gs_ftr {
+  background-color: var(--bg-light-color) !important;
+}
+
+/* hat icons */
+html.dark a.gs_in_ib .gs_ico {
+  filter: invert(0);
 }

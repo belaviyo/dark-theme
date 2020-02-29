@@ -1,19 +1,59 @@
-html.dark div.qFiThd,
-html.dark div.NlWrkb {
-  filter: invert(1);
-}
-html.dark #identifierNext {
-  filter: invert(1);
+/* myaccounts */
+
+/* in page sign in button */
+html.dark .nCP5yc:not(:disabled) {
   background-color: var(--button-bg) !important;
+  color: var(--front-color) !important;
 }
-html.dark a.gb_D {
-  filter: invert(0);
+
+/* fixed colors */
+html.dark .mtfBU,
+html.dark .EhlvJf.KKjvXb .iKN8Oe .DPvwYc,
+html.dark .EhlvJf.KKjvXb .GiKO7c {
+  color: var(--link-color) !important;
 }
-html.dark div.GiKO7c {
-  color: var(--front-color);
-}
-html.dark .DRS7Fe button:not(.TrZEUc),
-html.dark .t29vte [jsslot] span {
+
+/* logo */
+html.dark .gb_nc .gb_Vc::before {
   filter: invert(1);
-  color: var(--link-color);
+}
+
+/* accounts */
+
+/* fixed colors */
+html.dark .N3Hzgf .snByac,
+html.dark .VmOpGe,
+html.dark .RAYh1e {
+  background-color: var(--bg-color) !important;
+}
+
+/* next button */
+html.dark .zZhnYe:not(.RDPZE) {
+  background-color: var(--button-bg) !important;
+  color: var(--front-color) !important;
+}
+
+/* forget email */
+html.dark .DRS7Fe button:not(.TrZEUc),
+/* create account */
+html.dark .t29vte [jsslot] span {
+  color: var(--link-color) !important;
+}
+
+/* create account */
+html.dark a:hover,
+html.dark a:visited,
+html.dark a[href].uBOgn,
+html.dark button[type=button].uBOgn {
+  color: var(--link-color) !important;
+}
+
+/* Sign in instead */
+html.dark .IMH1vc {
+  color: var(--link-color) !important;
+}
+
+/* forgot password */
+html.dark .oG5Srb:not(.RDPZE) {
+  color: var(--link-color) !important;
 }
