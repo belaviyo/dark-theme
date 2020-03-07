@@ -1,5 +1,5 @@
 html.dark {
-  filter: invert(1);
+  filter: invert(1) !important;
   background-color: var(--bg-color-inverted) !important;
 }
 

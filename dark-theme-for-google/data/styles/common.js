@@ -19,6 +19,9 @@ const invert = hex => {
   return '#' + (Number(`0x1${hex.substr(1)}`) ^ 0xFFFFFF).toString(16).substr(1).toUpperCase();
 };
 
+const css = document.createElement('style');
+document.documentElement.appendChild(css);
+
 const update = prefs => {
   if ('enabled' in prefs) {
     document.documentElement.classList[prefs.enabled ? 'add' : 'remove']('dark');
@@ -55,6 +58,7 @@ const update = prefs => {
   if ('button-bg' in prefs) {
     style.setProperty('--button-bg', invert(prefs['button-bg']));
   }
+  css.textContent = prefs['custom-css'];
 };
 
 chrome.storage.local.get({
