@@ -1,0 +1,8 @@
+html.dark .appbar {
+  color: var(--link-color) !important;
+}
+
+html.dark .UyLz9e,
+html.dark .jfk-radiobutton-checked .jfk-radiobutton-radio {
+  filter: invert(1);
+}

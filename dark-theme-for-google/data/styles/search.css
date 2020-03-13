@@ -1,3 +1,59 @@
+/* fixed colors */
+html.dark .NNFu9b,
+html.dark .F7IIOc.IvNZOc.rlf__applied,
+html.dark .F7IIOc.IvNZOc.rlf__open,
+html.dark .yYlJEf:visited,
+html.dark #gsr .yYlJEf:active,
+html.dark .dIfRPc,
+html.dark .gyPpGe,
+html.dark .gyPpGe:visited,
+html.dark .qlVNAd,
+html.dark a.fl:link,
+html.dark .fl a,
+html.dark .flt,
+html.dark a.flt,
+html.dark .gl a:link,
+html.dark .hdtbItm label:hover,
+html.dark .hdtbItm a:hover,
+html.dark #hdtb-more-mn a:hover,
+html.dark .hdtb-mn-hd:hover,
+html.dark #hdtb-more:hover,
+html.dark #hdtb-tls:hover,
+html.dark #hdtb .hdtb-mitem a:active,
+html.dark #hdtb-more:active,
+html.dark .hdtb-mn-hd:active,
+html.dark .vk_cf a:hover,
+html.dark a.vk_cf:hover,
+html.dark .shop__a,
+html.dark .shop__a:active,
+html.dark #foot .AaVjTc a,
+html.dark #fll a,
+html.dark #bfl a,
+html.dark a:link,
+html.dark .q:active,
+html.dark .q:visited,
+html.dark .link,
+html.dark #hdtb-msb .hdtb-mitem.hdtb-msel,
+html.dark a.vk_cf:hover,
+html.dark #hdtb-msb .hdtb-mitem.hdtb-msel {
+  color: var(--link-color) !important;
+}
+
+/* fixed borders */
+html.dark .F7IIOc.IvNZOc.rlf__applied:focus,
+html.dark .F7IIOc.IvNZOc.rlf__open:focus,
+html.dark #hdtb-msb .hdtb-mitem.hdtb-msel,
+html.dark #hdtb-more:active .mn-dwn-arw,
+html.dark .uMdZh:active,
+html.dark .rllt__local-item-selected,
+html.dark .F7IIOc.rlf__applied .FZaw6b.J4Tfj,
+html.dark .F7IIOc.rlf__open .FZaw6b.J4Tfj,
+html.dark .hdtb-mn-hd:active .mn-dwn-arw,
+html.dark #hdtb-more:active .mn-dwn-arw,
+html.dark #hdtb-msb .hdtb-mitem.hdtb-msel {
+  border-color: var(--link-color) !important;
+}
+
 /* search header */
 html.dark #appbar,
 html.dark #hdtbSum,
@@ -25,6 +81,7 @@ html.dark .VByer .TU05kd {
 html.dark .rllt__tile-label,
 html.dark .SW5pqf,
 html.dark .xXEKkb,
+html.dark .pnrEfb,
 html.dark .wUrVib,
 html.dark .DLOTif,
 html.dark .VByer .UbRuwe,
@@ -48,6 +105,7 @@ html.dark .act-active-tab {
 html.dark .scobfn {
   color: var(--link-color) !important;
 }
+
 /* color picker */
 html.dark .kyN4Jf3TGqF__slider-background,
 html.dark .kdPwrb,
@@ -63,6 +121,7 @@ html.dark .brWULd {
 html.dark .pdpvld {
   color: var(--link-color);
 }
+html.dark .d2IKib,
 html.dark .cO53qb {
   color: var(--front-color) !important;
 }
@@ -72,6 +131,15 @@ html.dark .more-vert svg,
 html.dark .m3kSL svg,
 html.dark .HF9Klc svg {
   filter: invert(0);
+}
+
+/* more places 3dots */
+html.dark .hdtb-mitem a span {
+  filter: invert(0);
+}
+html.dark .z1asCe {
+  filter: invert(1);
+  color: var(--link-color);
 }
 
 /* Got it & Save button in settings */

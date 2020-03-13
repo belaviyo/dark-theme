@@ -1,4 +1,119 @@
-/* myaccounts */
+/* accounts and myaccounts */
+
+/* fixed bgs */
+html.dark .zZhnYe:not(.RDPZE),
+html.dark .zZhnYe:hover:not(.RDPZE),
+html.dark .zZhnYe:not(.RDPZE).u3bW4e,
+html.dark .XKSfm-Sx9Kwc-c6xFrd .VIpgJd-ldDVFe-JIbuQc[disabled],
+html.dark .Zp5qWd.zZhnYe:not(.RDPZE),
+html.dark .rGMe1e,
+html.dark .rGMe1e.qs41qe,
+html.dark .wM25w,
+html.dark .Bfurwb,
+html.dark .l3q5xe,
+html.dark .rFrNMe.dm7YTc .OabDMe,
+html.dark .KYZn9b,
+html.dark .erm3Qe {
+  background-color: var(--link-color) !important;
+}
+
+/* fixed borders */
+html.dark .XKSfm-Sx9Kwc-c6xFrd button:focus,
+html.dark .N3Hzgf.u3bW4e .cXrdqd,
+html.dark .ddop1d .nQOrEb,
+html.dark .ddop1d .Id5V1,
+html.dark .sN5Hqb.N2RpBe,
+html.dark .PciPcd.N2RpBe .espmsb,
+html.dark .ddop1d.N2RpBe .nQOrEb,
+html.dark .ddop1d.N2RpBe .Id5V1,
+html.dark .eRJVVb.N2RpBe,
+html.dark .jdgG1,
+html.dark .hEd6he.N2RpBe,
+html.dark .sfqO1d,
+html.dark .sfqO1d .nQOrEb,
+html.dark .sfqO1d.N2RpBe .Id5V1,
+html.dark .jQ9OEf .u3bW4e .cXrdqd,
+html.dark .MVpUfe,
+html.dark .MVpUfe:visited,
+html.dark .MVpUfe:hover,
+html.dark .wffsV,
+html.dark .pEWsEb.Jj6Lae .eRJVVb.sN5Hqb,
+html.dark .elUySc .nQOrEb,
+html.dark .DFaRcf.KKjvXb .KWTyKe::after,
+html.dark .uWlRce,
+html.dark .kPBwDb,
+html.dark .UV4uhb.N2RpBe .espmsb,
+html.dark .bNHYT.N2RpBe .nQOrEb,
+html.dark .bNHYT.N2RpBe .Id5V1,
+html.dark .iK47pf.N2RpBe,
+html.dark .utl8ve:not(.RDPZE) .j1feqc.N2RpBe,
+html.dark .utl8ve:not(.RDPZE) .j1feqc.N2RpBe .Id5V1,
+html.dark .utl8ve:not(.RDPZE) .j1feqc .nQOrEb,
+html.dark .t0VkCd.dmBkte,
+html.dark .ze9ebf .cXrdqd,
+html.dark .A3sRAb .cXrdqd,
+html.dark .Ng9rid .RuaZWe,
+html.dark .uIZQNc.u3bW4e .cXrdqd,
+html.dark .elUySc.N2RpBe .Id5V1 {
+  border-color: var(--link-color) !important;
+}
+
+/* fixed colors */
+html.dark .HQ8yf,
+html.dark .HQ8yf a,
+html.dark .oG5Srb:not(.RDPZE),
+html.dark .jveIPe .oG5Srb,
+html.dark a[href].uBOgn,
+html.dark button[type=button].uBOgn,
+html.dark .Zp5qWd.oG5Srb,
+html.dark .IMH1vc,
+html.dark .whsOnd:not([disabled]):focus ~ .AxOyFc,
+html.dark .rFrNMe.dm7YTc .whsOnd:not([disabled]):focus ~ .AxOyFc,
+html.dark .uIZQNc.u3bW4e .snByac.AxOyFc,
+html.dark .A3sRAb .zHQkBf:not([disabled]):focus ~ .snByac,
+html.dark .Ng9rid .XqM8Sd .HgKcKc,
+html.dark .tk3N6e-LgbsSe-n2to0e,
+html.dark .pvRjpc,
+html.dark .pvRjpc:active,
+html.dark .tk3N6e-LgbsSe-n2to0e:active,
+html.dark .tk3N6e-LgbsSe-n2to0e.tk3N6e-LgbsSe-ZmdkE:active,
+html.dark .tk3N6e-LgbsSe-n2to0e:focus,
+html.dark .tk3N6e-LgbsSe-n2to0e.tk3N6e-LgbsSe-ZmdkE:focus,
+html.dark .uhlTsf:hover,
+html.dark .uhlTsf,
+html.dark .t29vte [jsslot] span,
+html.dark .JDAKTe.SmR8 .wupBIe,
+html.dark .aTzEhb.uXELDc.sj692e .yiP64c,
+html.dark .aQ7q2c .J9fJmf .oG5Srb,
+html.dark .ze9ebf .zHQkBf:not([disabled]):focus ~ .snByac,
+html.dark .N3Hzgf .whsOnd:not([disabled]):focus ~ .AxOyFc,
+html.dark .edhGSc.u3bW4e > .RpC4Ne > .fqp6hd,
+html.dark .edhGSc.u3bW4e.dm7YTc > .RpC4Ne > .fqp6hd,
+html.dark .TpYURb.auswjd .cGfoab,
+html.dark .VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd,
+html.dark .VfPpkd-rymPhb-ibnC6b-OWXEXe-pXU01b,
+html.dark .VfPpkd-rymPhb-ibnC6b-OWXEXe-gk6SMd .VfPpkd-rymPhb-f7MjDc,
+html.dark .VfPpkd-rymPhb-ibnC6b-OWXEXe-pXU01b .VfPpkd-rymPhb-f7MjDc,
+html.dark .lOP8Qc,
+html.dark .KiVVqb .mwevgf,
+html.dark .Tljtee,
+html.dark .uYaBFd,
+html.dark .pEWsEb .DAFGi {
+  color: var(--link-color) !important;
+}
+
+/* fixed colors and bgs */
+html.dark .e3Duub,
+html.dark .e3Duub a,
+html.dark .e3Duub a:hover,
+html.dark .e3Duub a:link,
+html.dark .e3Duub a:visited,
+html.dark .MVpUfe,
+html.dark .MVpUfe:visited,
+html.dark .MVpUfe:hover {
+  background-color: var(--link-color) !important;
+  color: var(--front-color) !important;
+}
 
 /* in page sign in button */
 html.dark .nCP5yc:not(:disabled) {
@@ -17,8 +132,6 @@ html.dark .EhlvJf.KKjvXb .GiKO7c {
 html.dark .gb_nc .gb_Vc::before {
   filter: invert(1);
 }
-
-/* accounts */
 
 /* fixed colors */
 html.dark .N3Hzgf .snByac,
@@ -56,4 +169,9 @@ html.dark .IMH1vc {
 /* forgot password */
 html.dark .oG5Srb:not(.RDPZE) {
   color: var(--link-color) !important;
+}
+
+/* show password */
+.xjKiLb > span {
+  filter: invert(1);
 }

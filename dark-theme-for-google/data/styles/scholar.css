@@ -4,6 +4,11 @@ html.dark #gs_hdr_drw_lgo {
   filter: invert(1);
 }
 
+/* searchbox outline */
+.gs_in_txt:focus {
+  border-color: #b26f01 !important; /* matched inverted color */
+}
+
 /* Stand on the shoulders of giants */
 html.dark .gs_grn {
   color: var(--front-color) !important;
@@ -12,6 +17,12 @@ html.dark .gs_grn {
 /* search button */
 html.dark button.gs_btn_act {
   background-color: var(--button-bg) !important;
+}
+
+/* side links */
+html.dark .gs_md_li.gs_sel,
+html.dark a.gs_in_ib.gs_md_li.gs_sel .gs_lbl {
+  color: var(--link-color) !important;
 }
 
 /* label */

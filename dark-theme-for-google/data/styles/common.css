@@ -25,7 +25,7 @@ html.dark img {
   filter: invert(1);
 }
 
-/* google apps icon */
+/* google icon */
 html.dark .gb_Ve {
   filter: invert(0);
 }
@@ -48,6 +48,11 @@ html.dark a[href*="accounts.google"].gb_4 {
   color: var(--front-color) !important;
   background: var(--button-bg) !important;
   border-color: transparent;
+}
+
+/* google icon */
+.gb_nc .gb_Vc::before {
+  filter: invert(1);
 }
 
 /* user icon */

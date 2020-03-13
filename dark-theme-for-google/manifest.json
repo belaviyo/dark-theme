@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "version": "0.3.0.4",
+  "version": "0.3.1",
   "name": "Dark Theme for Google™",
   "description": "__MSG_app_description__",
   "default_locale": "en",
@@ -83,6 +83,12 @@
       "data/styles/common.css",
       "data/styles/widget.css"
     ],
+    "run_at": "document_start",
+    "all_frames": true
+  }, {
+    "matches": ["*://*/*"],
+    "include_globs": ["*://*.google.*/preferences*"],
+    "css": ["data/styles/preferences.css"],
     "run_at": "document_start",
     "all_frames": true
   }],
