@@ -66,6 +66,11 @@ html.dark #gs_hdr {
   background-color: var(--bg-light-color) !important;
 }
 
+/* main */
+html.dark #gs_top {
+  background-color: var(--bg-light-color) !important;
+}
+
 /* footer */
 html.dark #gs_ftr {
   background-color: var(--bg-light-color) !important;

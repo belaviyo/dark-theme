@@ -1,0 +1,55 @@
+html {
+  background-color: rgb(22, 22, 22) !important;
+}
+
+html, iframe {
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+em,
+img,
+svg,
+image,
+video,
+audio,
+embed,
+object,
+button,
+figure:empty {
+  opacity: 0.8;
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+[style*='background:url']:not(html):not(body):not(input),
+[style*='background: url']:not(html):not(body):not(input),
+[style*='background-image']:not(html):not(body):not(input) {
+  opacity: 0.8;
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+.lOPC8,
+.ixdEe,
+._01jIc, .be6sR {
+  filter: invert(100%) !important;
+  -webkit-filter: invert(100%) !important;
+}
+
+::-moz-scrollbar {background: #28292a !important}
+::-webkit-scrollbar {background: #28292a !important}
+::-moz-scrollbar-track {background: #343637 !important}
+::-webkit-scrollbar-track {background: #343637 !important}
+
+::-webkit-scrollbar-thumb {
+  background: #4d4e4f !important;
+  border-left: 1px solid #343637 !important;
+  border-right: 1px solid #343637 !important;
+}
+
+::-moz-scrollbar-thumb {
+  background: #4d4e4f !important;
+  border-left: 1px solid #343637 !important;
+  border-right: 1px solid #343637 !important;
+}

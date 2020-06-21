@@ -1,6 +1,6 @@
 html.dark {
   filter: invert(1) !important;
-  background-color: var(--bg-color-inverted) !important;
+  background-color: var(--bg-color) !important;
 }
 
 html.dark body {
@@ -27,6 +27,14 @@ html.dark img {
 
 /* google icon */
 html.dark .gb_Ve {
+  filter: invert(0);
+}
+
+/* google doodle */
+html.dark #hplogo {
+  filter: invert(1);
+}
+html.dark #hplogo canvas {
   filter: invert(0);
 }
 

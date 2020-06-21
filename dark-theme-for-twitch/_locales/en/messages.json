@@ -1,0 +1,62 @@
+{
+  "app_description": {
+    "message": "A highly customizable native dark theme for twitch.tv (platform for gamers)"
+  },
+  "name": {
+    "message": "Dark Theme for Twitch"
+  },
+  "options_title": {
+    "message": "Dark Theme for Twitch :: Options"
+  },
+  "options_font_color": {
+    "message": "Main font color"
+  },
+  "options_links_color": {
+    "message": "Links color"
+  },
+  "options_visited_color": {
+    "message": "Links color (visited)"
+  },
+  "options_links_header_color": {
+    "message": "Links header color"
+  },
+  "options_visited_header_color": {
+    "message": "Links header color (visited)"
+  },
+  "options_bg_color": {
+    "message": "Background color"
+  },
+  "options_bg_light_color": {
+    "message": "Background light color"
+  },
+  "options_selection_color": {
+    "message": "Selection color"
+  },
+  "options_selection_bg": {
+    "message": "Selection background color"
+  },
+  "options_schedule_title": {
+    "message": "Turn on as scheduled"
+  },
+  "options_faqs": {
+    "message": "Open FAQs page on updates"
+  },
+  "options_support": {
+    "message": "Support Development"
+  },
+  "options_reset": {
+    "message": "Reset"
+  },
+  "options_save": {
+    "message": "Save"
+  },
+  "options_saved": {
+    "message": "Options saved."
+  },
+  "options_enabled": {
+    "message": "Enabled"
+  },
+  "options_disabled": {
+    "message": "Disabled"
+  }
+}

@@ -24,7 +24,7 @@ function save() {
 
 function restore() {
   chrome.storage.local.get({
-    'background-color': '#1f1f1f',
+    'background-color': '#121212',
     'text-color': '#d2cfcf',
     'border-color': '#606060',
     'toolbar-color': '#1f1f1f',
@@ -50,7 +50,7 @@ function restore() {
 }
 function reset() {
   Object.entries({
-    'background-color': '#1f1f1f',
+    'background-color': '#121212',
     'text-color': '#d2cfcf',
     'border-color': '#606060',
     'toolbar-color': '#1f1f1f',

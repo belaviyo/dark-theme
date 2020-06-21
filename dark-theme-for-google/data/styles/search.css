@@ -64,6 +64,8 @@ html.dark .GHDvEf,
 html.dark .GHDvEf:hover,
 html.dark .GHDvEf.selected,
 html.dark .GHDvEf.selected:hover,
+html.dark .twQ0Be,
+html.dark .OcgH4b,
 html.dark .gLFyf,
 html.dark .sfbg {
   background-color: var(--bg-color) !important;
@@ -71,6 +73,7 @@ html.dark .sfbg {
 
 /* elements that have bg image */
 html.dark span.qB1pae,
+html.dark .EzgVlc,
 html.dark .HPVvwb,
 html.dark .sb43,
 html.dark .VByer .TU05kd {

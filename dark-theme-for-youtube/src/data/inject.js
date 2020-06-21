@@ -16,20 +16,20 @@ chrome.storage.onChanged.addListener(prefs => {
         document.querySelector('ytd-topbar-menu-button-renderer:last-of-type ytd-toggle-theme-compact-link-renderer').click();
         document.querySelector('ytd-toggle-theme-compact-link-renderer').click();
       }
-      catch(e) {
+      catch (e) {
         window.location.reload();
       }
     }
   }
 });
 
-var style = document.createElement('style');
+const style = document.createElement('style');
 style.type = 'text/css';
 style.media = 'screen';
-var enabled = true;
+let enabled = true;
 
 const update = () => chrome.storage.local.get({
-  'background-color': '#2e2e2e',
+  'background-color': '#121212',
   'text-color': '#d2cfcf',
   'border-color': '#606060',
   'toolbar-color': '#1f1f1f',
@@ -39,7 +39,9 @@ const update = () => chrome.storage.local.get({
     [dark] *:not([style-scope]):not(.style-scope) {
       --yt-main-app-background: ${prefs['background-color']} !important;
       --yt-main-app-background-tmp: ${prefs['background-color']} !important;
+      --yt-spec-general-background-a: ${prefs['background-color']} !important;
       --yt-primary-text-color: ${prefs['text-color']} !important;
+      --yt-spec-text-primary: ${prefs['text-color']} !important;
       --yt-border-color: ${prefs['border-color']} !important;
       --yt-swatch-primary: ${prefs['toolbar-color']} !important;
     }
@@ -66,7 +68,7 @@ chrome.storage.onChanged.addListener(prefs => {
 });
 
 // reinsert when body is ready
-var mutation = new MutationObserver(() => {
+const mutation = new MutationObserver(() => {
   if (enabled) {
     document.documentElement.appendChild(style);
   }
