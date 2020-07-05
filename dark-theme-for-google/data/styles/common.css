@@ -2,6 +2,11 @@ html.dark {
   filter: invert(1) !important;
   background-color: var(--bg-color) !important;
 }
+@supports (-moz-appearance:none) {
+  html.dark {
+    background-color: var(--bg-color-inverted) !important;
+  }
+}
 
 html.dark body {
   color: #555 !important;
@@ -14,6 +19,8 @@ html.dark ::selection {
 
 html.dark iframe,
 html.dark g-button,
+html.dark button.g-button,
+html.dark input[type=submit].g-button,
 html.dark text-button,
 html.dark svg,
 html.dark div[class*=__image],
@@ -48,6 +55,11 @@ html.dark .gb_Id .gb_kd {
   filter: invert(1);
   color: var(--front-color) !important;
   background-color: var(--button-bg) !important;
+}
+
+/* big profile photo */
+html.dark .gb_Ma.gbip.gb_kb {
+  filter: invert(1);
 }
 
 /* custom colors */
@@ -88,3 +100,9 @@ html.dark a:visited cite {
 html.dark #fbar {
   background-color: var(--bg-light-color) !important;
 }
+
+/* search rebon */
+html.dark .sfbgg {
+  background-color: var(--bg-color) !important;
+}
+

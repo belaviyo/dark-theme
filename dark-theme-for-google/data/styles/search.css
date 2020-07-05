@@ -57,7 +57,6 @@ html.dark #hdtb-msb .hdtb-mitem.hdtb-msel {
 /* search header */
 html.dark #appbar,
 html.dark #hdtbSum,
-html.dark .RNNXgb,
 html.dark .tb_c,
 html.dark .aajZCb,
 html.dark .GHDvEf,
@@ -66,9 +65,14 @@ html.dark .GHDvEf.selected,
 html.dark .GHDvEf.selected:hover,
 html.dark .twQ0Be,
 html.dark .OcgH4b,
-html.dark .gLFyf,
 html.dark .sfbg {
   background-color: var(--bg-color) !important;
+}
+
+/* searchbox */
+html.dark .gLFyf,
+html.dark .RNNXgb {
+  background-color: #fff;
 }
 
 /* elements that have bg image */
@@ -76,6 +80,8 @@ html.dark span.qB1pae,
 html.dark .EzgVlc,
 html.dark .HPVvwb,
 html.dark .sb43,
+html.dark .JJP03,
+html.dark .sbic.sbei,
 html.dark .VByer .TU05kd {
   filter: invert(1);
 }

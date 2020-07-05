@@ -30,8 +30,8 @@ html.dark .eRJVVb.N2RpBe,
 html.dark .jdgG1,
 html.dark .hEd6he.N2RpBe,
 html.dark .sfqO1d,
-html.dark .sfqO1d .nQOrEb,
 html.dark .sfqO1d.N2RpBe .Id5V1,
+html.dark .sfqO1d .nQOrEb,
 html.dark .jQ9OEf .u3bW4e .cXrdqd,
 html.dark .MVpUfe,
 html.dark .MVpUfe:visited,
@@ -56,6 +56,15 @@ html.dark .Ng9rid .RuaZWe,
 html.dark .uIZQNc.u3bW4e .cXrdqd,
 html.dark .elUySc.N2RpBe .Id5V1 {
   border-color: var(--link-color) !important;
+}
+
+/* two step verification */
+html.dark .smsauth-interstitial-buttonaslink {
+  background-color: var(--bg-color) !important;
+  color: var(--link-color) !important;
+}
+html.dark .smsauth-interstitial-smallheading-warning {
+  filter: invert(1);
 }
 
 /* fixed colors */

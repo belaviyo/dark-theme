@@ -34,6 +34,7 @@ const update = prefs => {
     style.setProperty('--bg-light-color', invert(prefs['bg-light-color']));
   }
   if ('link-color' in prefs) {
+    style.setProperty('--link-color-inverted', prefs['link-color']);
     style.setProperty('--link-color', invert(prefs['link-color']));
     style.setProperty('--gm-colortextbutton-ink-color', invert(prefs['link-color']));
   }
