@@ -58,5 +58,38 @@
   },
   "options_disabled": {
     "message": "Disabled"
+  },
+  "options_exclude_images": {
+    "message": "Exclude \"Google Images\""
+  },
+  "options_exclude_photos": {
+    "message": "Exclude \"Google Photos\""
+  },
+  "options_exclude_translate": {
+    "message": "Exclude \"Google Translate\""
+  },
+  "options_exclude_blog": {
+    "message": "Exclude \"Google Blog\""
+  },
+  "options_exclude_books": {
+    "message": "Exclude \"Google Books\""
+  },
+  "options_exclude_discussions": {
+    "message": "Exclude \"Google Discussions\""
+  },
+  "options_exclude_news": {
+    "message": "Exclude \"Google News\""
+  },
+  "options_exclude_places": {
+    "message": "Exclude \"Google Places\""
+  },
+  "options_exclude_recipes": {
+    "message": "Exclude \"Google Recipes\""
+  },
+  "options_exclude_shopping": {
+    "message": "Exclude \"Google Shopping\""
+  },
+  "options_exclude_video": {
+    "message": "Exclude \"Google Video\""
   }
 }

@@ -26,6 +26,39 @@ const update = prefs => {
   if ('enabled' in prefs) {
     document.documentElement.classList[prefs.enabled ? 'add' : 'remove']('dark');
   }
+  if (prefs['exclude-translate'] === true && location.hostname === 'translate.google.com') {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-images'] === true && location.search.includes('tbm=isch')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-blog'] === true && location.search.includes('tbm=blg')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-books'] === true && location.search.includes('tbm=bks')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-discussions'] === true && location.search.includes('tbm=dsc')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-news'] === true && location.hostname === 'news.google.com') {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-places'] === true && location.search.includes('tbm=plcs')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-recipes'] === true && location.search.includes('tbm=rcp')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-shopping'] === true && location.search.includes('tbm=shop')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-video'] === true && location.search.includes('tbm=vid')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (prefs['exclude-photos'] === true && location.pathname.startsWith('/photos')) {
+    document.documentElement.classList.remove('dark');
+  }
   if ('bg-color' in prefs) {
     style.setProperty('--bg-color', invert(prefs['bg-color']));
     style.setProperty('--bg-color-inverted', prefs['bg-color']);
@@ -74,7 +107,18 @@ chrome.storage.local.get({
   'selection-color': '#eeeeee',
   'selection-bg': '#bbbbbb',
   'button-bg': '#1a73e8',
-  'custom-css': ''
+  'custom-css': '',
+  'exclude-images': false,
+  'exclude-photos': false,
+  'exclude-translate': false,
+  'exclude-blog': false,
+  'exclude-books': false,
+  'exclude-discussions': false,
+  'exclude-news': false,
+  'exclude-places': false,
+  'exclude-recipes': false,
+  'exclude-shopping': false,
+  'exclude-video': false
 }, update);
 
 chrome.storage.onChanged.addListener(ps => {

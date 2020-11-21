@@ -31,6 +31,10 @@ html.dark [style*="background-image:url"],
 html.dark img {
   filter: invert(1);
 }
+html.dark div[class*=__image] div[class*=__image],
+html.dark div[class*=__image] img {
+  filter: invert(0);
+}
 
 /* google icon */
 html.dark .gb_Ve {

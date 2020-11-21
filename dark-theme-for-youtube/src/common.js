@@ -1,5 +1,17 @@
 'use strict';
 
+/*
+  OS:
+    PREF=f4=4000000&f6=40000000
+    PREF=f4=4000000
+  Dark:
+    PREF=f4=4000000&f6=40000400
+    PREF=f4=4000000&f6=400
+  Light:
+    PREF=f4=4000000&f6=40080000
+    PREF=f4=4000000&f6=80000
+*/
+
 function set(enabled) {
   // console.log('SET', enabled);
   chrome.cookies.get({
@@ -10,11 +22,14 @@ function set(enabled) {
       url: 'https://www.youtube.com',
       domain: '.youtube.com',
       name: 'PREF',
-      value: c ? c.value : 'f5=30030&f1=50000000'
+      value: c ? c.value : 'f6=400'
     };
-    cookie.value = cookie.value.replace('&f6=400', '');
+    cookie.value = cookie.value.replace(/&f6=\d+/, '');
     if (enabled) {
       cookie.value += '&f6=400';
+    }
+    else {
+      cookie.value += '&f6=80000';
     }
     chrome.cookies.set(cookie);
   });
@@ -44,8 +59,14 @@ chrome.cookies.onChanged.addListener(changeInfo => {
         url: 'https://www.youtube.com',
         name: 'PREF'
       }, cookie => {
-        const enabled = cookie && cookie.value.indexOf('&f6=400') !== -1;
-        chrome.storage.local.set({enabled}, () => update(enabled));
+        let enabled = false;
+        if (cookie) {
+          const t = /f6=(\d+)/.exec(cookie.value);
+          if (t && t[1].endsWith('400')) {
+            enabled = true;
+          }
+        }
+        chrome.storage.local.set({enabled});
       });
     }
   }

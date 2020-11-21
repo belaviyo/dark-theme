@@ -1,24 +1,25 @@
 'use strict';
 
+function getElementByXpath(path) {
+  return document.evaluate(path, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+}
+
 chrome.storage.onChanged.addListener(prefs => {
   if (prefs.enabled) {
-    const toggle = document.querySelector('ytd-multi-page-menu-renderer paper-toggle-button');
-    if (toggle) {
-      if (toggle.getAttribute('aria-pressed') === 'false' && prefs.enabled.newValue) {
-        toggle.click();
+    try {
+      if (prefs.enabled.newValue === true) {
+        getElementByXpath(
+          '/html/body/ytd-app/ytd-popup-container/iron-dropdown/div/ytd-multi-page-menu-renderer/div[4]/ytd-multi-page-menu-renderer/div[3]/div[1]/yt-multi-page-menu-section-renderer/div[2]/ytd-compact-link-renderer[3]/a/paper-item'
+        ).click();
       }
-      if (toggle.getAttribute('aria-pressed') === 'true' && prefs.enabled.oldValue) {
-        toggle.click();
+      else {
+        getElementByXpath(
+          '/html/body/ytd-app/ytd-popup-container/iron-dropdown/div/ytd-multi-page-menu-renderer/div[4]/ytd-multi-page-menu-renderer/div[3]/div[1]/yt-multi-page-menu-section-renderer/div[2]/ytd-compact-link-renderer[4]/a/paper-item'
+        ).click();
       }
     }
-    else {
-      try {
-        document.querySelector('ytd-topbar-menu-button-renderer:last-of-type ytd-toggle-theme-compact-link-renderer').click();
-        document.querySelector('ytd-toggle-theme-compact-link-renderer').click();
-      }
-      catch (e) {
-        window.location.reload();
-      }
+    catch (e) {
+      window.location.reload();
     }
   }
 });
@@ -44,6 +45,8 @@ const update = () => chrome.storage.local.get({
       --yt-spec-text-primary: ${prefs['text-color']} !important;
       --yt-border-color: ${prefs['border-color']} !important;
       --yt-swatch-primary: ${prefs['toolbar-color']} !important;
+      --yt-spec-brand-background-primary: ${prefs['toolbar-color']} !important;
+      --yt-spec-brand-background-secondary: ${prefs['toolbar-color']} !important;
     }
   ` + prefs['custom-css'];
 });

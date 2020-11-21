@@ -19,7 +19,18 @@ function save() {
     'day-time': document.getElementById('day-time').value,
     'night-time': document.getElementById('night-time').value,
     'schedule': document.getElementById('schedule').checked,
-    'faqs': document.getElementById('faqs').checked
+    'faqs': document.getElementById('faqs').checked,
+    'exclude-images': document.getElementById('exclude-images').checked,
+    'exclude-photos': document.getElementById('exclude-photos').checked,
+    'exclude-translate': document.getElementById('exclude-translate').checked,
+    'exclude-blog': document.getElementById('exclude-blog').checked,
+    'exclude-books': document.getElementById('exclude-books').checked,
+    'exclude-discussions': document.getElementById('exclude-discussions').checked,
+    'exclude-news': document.getElementById('exclude-news').checked,
+    'exclude-places': document.getElementById('exclude-places').checked,
+    'exclude-recipes': document.getElementById('exclude-recipes').checked,
+    'exclude-shopping': document.getElementById('exclude-shopping').checked,
+    'exclude-video': document.getElementById('exclude-video').checked
   }, () => {
     const status = document.getElementById('status');
     status.textContent = chrome.i18n.getMessage('options_saved');
@@ -45,13 +56,26 @@ const defaults = {
   'day-time': '19:00',
   'night-time': '08:00',
   'schedule': false,
-  'faqs': true
+  'faqs': true,
+  'exclude-images': false,
+  'exclude-photos': false,
+  'exclude-translate': false,
+  'exclude-blog': false,
+  'exclude-books': false,
+  'exclude-discussions': false,
+  'exclude-news': false,
+  'exclude-places': false,
+  'exclude-recipes': false,
+  'exclude-shopping': false,
+  'exclude-video': false
 };
 
 function restore() {
   chrome.storage.local.get(defaults, prefs => {
     Object.keys(prefs).forEach(pref => {
-      document.getElementById(pref)[pref === 'schedule' || pref === 'faqs' ? 'checked' : 'value'] = prefs[pref];
+      console.log(pref);
+      const e = document.getElementById(pref);
+      e[e.type === 'checkbox' ? 'checked' : 'value'] = prefs[pref];
     });
     document.getElementById('schedule').dispatchEvent(new Event('change'));
   });

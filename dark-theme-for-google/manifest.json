@@ -99,7 +99,8 @@
     "38": "data/icons/38.png",
     "64": "data/icons/64.png",
     "128": "data/icons/128.png",
-    "256": "data/icons/256.png"
+    "256": "data/icons/256.png",
+    "512": "data/icons/512.png"
   },
   "homepage_url": "https://add0n.com/dark-theme.html?from=google",
   "options_ui": {
