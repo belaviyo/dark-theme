@@ -29,6 +29,9 @@ const update = prefs => {
   if (prefs['exclude-translate'] === true && location.hostname === 'translate.google.com') {
     document.documentElement.classList.remove('dark');
   }
+  if (prefs['exclude-scholar'] === true && location.hostname === 'scholar.google.com') {
+    document.documentElement.classList.remove('dark');
+  }
   if (prefs['exclude-images'] === true && location.search.includes('tbm=isch')) {
     document.documentElement.classList.remove('dark');
   }
@@ -44,7 +47,7 @@ const update = prefs => {
   if (prefs['exclude-news'] === true && location.hostname === 'news.google.com') {
     document.documentElement.classList.remove('dark');
   }
-  if (prefs['exclude-places'] === true && location.search.includes('tbm=plcs')) {
+  if (prefs['exclude-places'] === true && (location.search.includes('tbm=plcs') || location.search.includes('tbm=lcl'))) {
     document.documentElement.classList.remove('dark');
   }
   if (prefs['exclude-recipes'] === true && location.search.includes('tbm=rcp')) {
@@ -57,6 +60,14 @@ const update = prefs => {
     document.documentElement.classList.remove('dark');
   }
   if (prefs['exclude-photos'] === true && location.pathname.startsWith('/photos')) {
+    document.documentElement.classList.remove('dark');
+  }
+
+  /* permanent excludes */
+  if (location.hostname === 'translate.google.com' && location.search.includes('&u=')) {
+    document.documentElement.classList.remove('dark');
+  }
+  if (location.pathname.startsWith('/travel/') || location.pathname.startsWith('/flights/')) {
     document.documentElement.classList.remove('dark');
   }
   if ('bg-color' in prefs) {
@@ -118,7 +129,8 @@ chrome.storage.local.get({
   'exclude-places': false,
   'exclude-recipes': false,
   'exclude-shopping': false,
-  'exclude-video': false
+  'exclude-video': false,
+  'exclude-scholar': false
 }, update);
 
 chrome.storage.onChanged.addListener(ps => {

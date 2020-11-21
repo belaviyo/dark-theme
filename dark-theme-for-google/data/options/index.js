@@ -30,7 +30,8 @@ function save() {
     'exclude-places': document.getElementById('exclude-places').checked,
     'exclude-recipes': document.getElementById('exclude-recipes').checked,
     'exclude-shopping': document.getElementById('exclude-shopping').checked,
-    'exclude-video': document.getElementById('exclude-video').checked
+    'exclude-video': document.getElementById('exclude-video').checked,
+    'exclude-scholar': document.getElementById('exclude-scholar').checked
   }, () => {
     const status = document.getElementById('status');
     status.textContent = chrome.i18n.getMessage('options_saved');
@@ -67,7 +68,8 @@ const defaults = {
   'exclude-places': false,
   'exclude-recipes': false,
   'exclude-shopping': false,
-  'exclude-video': false
+  'exclude-video': false,
+  'exclude-scholar': false
 };
 
 function restore() {

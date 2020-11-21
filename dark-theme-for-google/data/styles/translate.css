@@ -31,13 +31,17 @@ html.dark .header-button::before {
 html.dark .gb_sa.gb_Za.gb_Se.gb_Dc {
   background-color: var(--bg-color) !important;
 }
-
+html.dark .yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc,
+html.dark .cWQYBc .irkilc,
+html.dark .cWQYBc .hL2wFc,
+html.dark .eIKIse,
 /* Noun Adjective Adverb, ... */
 html.dark .gt-lc.gt-lc-mobile .gt-cd-pos {
   color: var(--link-color) !important;
 }
 
 /* score */
+html.dark .ksE5nf.EiZ8Dd,
 html.dark .filled.gt-score-dot {
   filter: invert(1);
 }

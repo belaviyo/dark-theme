@@ -91,5 +91,8 @@
   },
   "options_exclude_video": {
     "message": "Exclude \"Google Video\""
+  },
+  "options_exclude_scholar": {
+    "message": "Exclude \"Google Scholar\""
   }
 }

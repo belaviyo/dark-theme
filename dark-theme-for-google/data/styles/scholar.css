@@ -26,6 +26,8 @@ html.dark a.gs_in_ib.gs_md_li.gs_sel .gs_lbl {
 }
 
 /* label */
+html.dark #gs_eml_lcb,
+html.dark #gs_eml_lra,
 html.dark .gs_ctc,
 html.dark .gs_rt a:link,
 html.dark .gs_rt a:link b,
@@ -38,12 +40,14 @@ html.dark .gs_rt2 a:visited b {
   color: var(--link-color) !important;
 }
 
-/* Gooooooogle */
-html.dark .gs_ico,
-html.dark .gs_icm {
+/* header icon */
+html.dark #gs_ab_ico .gs_ico {
   filter: invert(1);
 }
-
+/* tags */
+html.dark .gs_in_ib.gs_btn_act .gs_ico, .gs_in_ib.gs_btn_cre .gs_ico {
+  filter: invert(1);
+}
 /* star button */
 html.dark .gs_fl svg {
   stroke: var(--link-color);

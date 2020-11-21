@@ -115,6 +115,11 @@ html.dark .scobfn {
   color: var(--link-color) !important;
 }
 
+/* calc */
+html.dark .UUhRt {
+  filter: invert(1);
+}
+
 /* color picker */
 html.dark .kyN4Jf3TGqF__slider-background,
 html.dark .kdPwrb,
@@ -130,6 +135,9 @@ html.dark .brWULd {
 html.dark .pdpvld {
   color: var(--link-color);
 }
+html.dark .cmlJmd,
+html.dark .Y3v8qd,
+html.dark .IsZvec,
 html.dark .d2IKib,
 html.dark .cO53qb {
   color: var(--front-color) !important;
