@@ -70,10 +70,69 @@ html.dark .sfbg {
 }
 
 /* searchbox */
-html.dark .gLFyf,
-html.dark .RNNXgb {
-  background-color: #fff;
+
+
+/* fix */
+html.dark .yg51vc,
+html.dark .I6TXqe,
+html.dark .MGqjK,
+html.dark .MXl0lf,
+html.dark .YbqTTb,
+html.dark .zthhpf,
+html.dark .sbibod,
+html.dark .RNNXgb,
+html.dark .lst-c .sbib_a,
+html.dark .jZWadf, 
+html.dark .yg51vc,
+html.dark .I6TXqe,
+html.dark .MGqjK,
+html.dark .MXl0lf,
+html.dark .YbqTTb,
+html.dark .cF4V5c,
+html.dark .Ix6LGe,
+html.dark .VvrH3b,
+html.dark .G9CET,
+html.dark .e7RZX,
+html.dark .kp-blk,
+html.dark .VqFMTc,
+html.dark .R9zNe,
+html.dark .Hg3mWc,
+html.dark .vk_c,
+html.dark .lV0vqc,
+html.dark .F9PbJd,
+html.dark .F9PbJd,
+html.dark .KC1dQ,
+html.dark .K2NVYb,
+html.dark .V00Bye,
+html.dark .NZp2ef,
+html.dark .VfPpkd-BFbNVe-bF1uUb {
+  background-color: var(--bg-light-color) !important;	
 }
+html.dark .orkam video,
+html.dark .OKAyuf,
+html.dark .JcqPK.FS9Ovd,
+html.dark .nZbkuc.OCCxVb,
+html.dark .wyNFW,
+html.dark .gb_qa a, .gb_Cc a,
+html.dark .Z2kQHc {
+  filter: invert(1);
+}
+html.dark .GshZze:not(.hdtb-tl-sel):hover {
+  filter: invert(0.3);
+}
+html.dark .s8GCU,
+html.dark .Lj9fsd,
+html.dark .fWfAye,
+html.dark .ECgenc,
+html.dark .qcTKEe,
+html.dark .sh-dr__prs {
+  background-color: var(--bg-color) !important;)
+}
+html.dark .zriOQb g-menu-item{
+  color: var(--bg-light-color) !important;
+}
+
+
 
 /* elements that have bg image */
 html.dark span.qB1pae,
